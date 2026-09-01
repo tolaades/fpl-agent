@@ -1,0 +1,51 @@
+name: FPL daily brief
+
+# Runs in GitHub's cloud, so nothing on your machine needs to be awake.
+#
+# 02:30 UTC is chosen deliberately: FPL applies overnight price changes at
+# roughly 01:30 UK time, so this captures the new prices and any injury news
+# added to the `news` field during the previous day.
+on:
+  schedule:
+    - cron: '30 2 * * *'
+  workflow_dispatch:          # lets you trigger a run by hand from the Actions tab
+
+permissions:
+  contents: write             # needed to commit the brief back to the repo
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch data and build the brief
+        run: |
+          mkdir -p cache snapshots
+          python -m fpl_agent.run_week \
+            --squad squad.json \
+            --cache ./cache \
+            --out brief.md
+
+      - name: Archive today's snapshot
+        # Keeping dated copies means you can replay any past gameweek and check
+        # what the model projected against what actually happened.
+        run: |
+          DATE=$(date -u +%Y-%m-%d)
+          cp cache/bootstrap-static.json "snapshots/bootstrap-$DATE.json"
+          cp brief.md "snapshots/brief-$DATE.md"
+
+      - name: Commit
+        run: |
+          git config user.name  "fpl-agent"
+          git config user.email "actions@github.com"
+          git add brief.md snapshots/
+          git diff --staged --quiet || git commit -m "Brief for $(date -u +%Y-%m-%d)"
+          git push
