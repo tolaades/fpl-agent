@@ -46,36 +46,40 @@ remote. Run it twice: **Thursday 21:00** and **Friday 08:00**.
 
 ### Prompt to paste
 
+Replace `<you>/<repo>` with your actual path before saving.
+
 ```
 Fetch https://raw.githubusercontent.com/<you>/<repo>/main/brief.md
 
 That file is produced by a projection model that ran this morning. Treat its
 numbers as given. Do not recalculate expected points, re-rank transfers, or
-substitute your own judgement for its projections -- your job is the
-information the model cannot see.
+substitute your own judgement for its projections. Your job is the information
+the model cannot see. The brief also contains a "Your plan" section with my
+current chip status and standing decisions - read it, don't assume.
 
-Then research, for every club appearing in that brief:
+Research, for every club appearing in that brief:
 
-1. Press conferences from the last 48 hours. Manager quotes on fitness,
-   who is "assessed", "a doubt", or "back in training".
+1. Press conferences from the last 48 hours. Manager quotes on fitness, who is
+   "assessed", "a doubt", or "back in training".
 2. Injury and suspension updates, including anything reported after the
    model's data was pulled.
 3. Predicted lineups from at least two independent sources.
 4. Whether any of these clubs played a midweek European or cup fixture. If so,
-   flag rotation risk explicitly -- the model has no knowledge of fixture
+   flag rotation risk explicitly - the model has no knowledge of fixture
    congestion and will overrate anyone likely to be rested.
-5. Any late price changes.
+5. Any late price changes affecting a transfer named in the plan.
 
 Then write me:
 
 - **Start or bench changes**: any player in the recommended XI whose start is
   now in doubt, and who should replace them from the bench.
-- **Transfers**: which rows in the transfer table survive the news, and which
-  are dead because the incoming player is injured, suspended, or a rotation
-  risk. Say plainly if the top-ranked transfer is now a bad idea.
+- **Transfers**: which rows in the transfer table survive the news. Say plainly
+  if the top-ranked transfer is now a bad idea. If the plan names a specific
+  target, tell me whether it still holds and whether the price has moved.
 - **Captain**: whether the recommended captain is still the right call.
-- **Chip check**: one line against my plan -- Triple Captain around GW7,
-  Wildcard GW6, Free Hit held for GW12 -- on whether this week changes it.
+- **Chip check**: one line against the chip status in the plan. Flag anything
+  that would change the timing - in particular, any newly announced blank or
+  double gameweek, since that overrides the planned Free Hit week.
 - **Deadline** and how long I have.
 
 Where the news contradicts the model, say so directly. Do not average the two

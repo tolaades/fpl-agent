@@ -26,6 +26,10 @@ python -m fpl_agent.run_week --squad squad.json --out brief.md
 { "entry_id": 1234567, "free_transfers": 2 }
 ```
 
+`chips` and `notes` are optional. Anything you put there is rendered into the
+brief under "Your plan", which keeps your chip status and standing decisions in
+one place rather than duplicated in the agent prompt.
+
 or list the players by name:
 
 ```json
@@ -49,6 +53,7 @@ Add `--offline` to rerun against the cached snapshot without refetching.
 | `priors.py` | Empirical Bayes priors from last season, joined on player `code` |
 | `team_strength.py` | Poisson attack/defence ratings fitted on results |
 | `optimise.py` | Best XI, transfer ranking, and the full-squad ILP |
+| `recency.py` | Per-match minutes, weighted toward the latest appearance |
 | `run_week.py` | Fetches, runs everything, writes the brief |
 
 Player IDs change between seasons; the stable identifier is `code`, which is

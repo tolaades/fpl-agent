@@ -11,6 +11,7 @@ import argparse, json, os, sys, urllib.request, datetime
 from collections import defaultdict
 
 from .engine import build
+from .recency import fetch_recent_minutes
 from .optimise import optimise, best_eleven, rank_transfers
 
 API = 'https://fantasy.premierleague.com/api'
@@ -45,7 +46,7 @@ def load_squad(e, path):
     """Squad file: {"entry_id": 123} or {"players": ["Haaland", ...],
     "bank": 0.4, "free_transfers": 2}."""
     cfg = json.load(open(path))
-    if cfg.get('entry_id'):
+    if cfg.get('entry_id'):  # null or absent falls through to the name list
         gw = e.NEXT - 1
         url = f"{API}/entry/{cfg['entry_id']}/event/{max(1, gw)}/picks/"
         req = urllib.request.Request(url, headers={'User-Agent': UA})
@@ -76,7 +77,8 @@ def ticker(e, proj):
     return ' '.join(out)
 
 
-def brief(e, ids, bank, ft, horizon):
+def brief(e, ids, bank, ft, horizon, cfg_extra=None):
+    cfg_extra = cfg_extra or {}
     L = []
     ev = [x for x in e.B['events'] if x['id'] == e.NEXT][0]
     dl = datetime.datetime.fromisoformat(ev['deadline_time'].replace('Z', '+00:00'))
@@ -120,6 +122,15 @@ def brief(e, ids, bank, ft, horizon):
                  f"{p['news'] or 'flagged, no detail'}"
                  + (f" | {ch}% to play" if ch is not None else ''))
 
+    chips = cfg_extra.get('chips') or {}
+    notes = cfg_extra.get('notes') or []
+    if chips or notes:
+        L.append('\n## Your plan\n')
+        for k, v in chips.items():
+            L.append(f"- **{k.replace('_', ' ').title()}**: {v}")
+        for note in notes:
+            L.append(f'- {note}')
+
     L.append('\n## What this model cannot see\n')
     L.append('- Press conferences and predicted lineups. Projections assume the '
              'last XI repeats. Check team news before the deadline.')
@@ -140,6 +151,8 @@ def main():
     ap.add_argument('--horizon', type=int, default=5)
     ap.add_argument('--offline', action='store_true',
                     help='use cached files instead of fetching')
+    ap.add_argument('--no-recency', action='store_true',
+                    help='skip the per-match minutes pass (faster, less accurate)')
     a = ap.parse_args()
 
     if a.offline:
@@ -151,7 +164,22 @@ def main():
 
     e = build(boot, fixt, hist, horizon=a.horizon)
     ids, bank, ft = load_squad(e, a.squad)
-    text = brief(e, ids, bank, ft, a.horizon)
+
+    # Second pass with per-match minutes. Season totals cannot tell a player
+    # who has just won his place from one who has just lost it, and that
+    # distinction is worth several points a week on rotation-risk players.
+    if not a.offline and not a.no_recency:
+        shortlist = set(ids)
+        for t in (1, 2, 3, 4):
+            ranked = sorted((p for p in e.B['elements']
+                             if p['element_type'] == t and p['status'] == 'a'),
+                            key=lambda p: -e.PROJ[p['id']]['total'])
+            shortlist.update(p['id'] for p in ranked[:40])
+        print(f'fetching per-match minutes for {len(shortlist)} players...')
+        recent = fetch_recent_minutes(sorted(shortlist))
+        print(f'  got {len(recent)}')
+        e = build(boot, fixt, hist, horizon=a.horizon, recent=recent)
+    text = brief(e, ids, bank, ft, a.horizon, cfg_extra=json.load(open(a.squad)))
     with open(a.out, 'w') as f:
         f.write(text)
     print(f'wrote {a.out} for GW{e.NEXT} ({len(ids)} players)')

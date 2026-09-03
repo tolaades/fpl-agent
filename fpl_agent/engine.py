@@ -3,14 +3,19 @@ import json, math
 from collections import defaultdict
 
 from .priors import load_history, build_priors, shrink_to_prior
+from .recency import weighted_start_rate
 from .team_strength import (build_team_strength, expected_goals,
                             clean_sheet_prob, LEAGUE_GOALS)
 
 POS = {1: 'GKP', 2: 'DEF', 3: 'MID', 4: 'FWD'}
 
 
-def build(bootstrap_path, fixtures_path, history_path, horizon=5):
-    """Load a snapshot and return a namespace with everything projected."""
+def build(bootstrap_path, fixtures_path, history_path, horizon=5, recent=None):
+    """Load a snapshot and return a namespace with everything projected.
+
+    recent: optional {player_id: [minutes per gameweek]} from recency.py.
+    """
+    recent = recent or {}
     B = json.load(open(bootstrap_path))
     FX = json.load(open(fixtures_path))
     TEAMS = {t['id']: t for t in B['teams']}
@@ -75,10 +80,20 @@ def build(bootstrap_path, fixtures_path, history_path, horizon=5):
             return dict(p_play=0, p_start=0, xmins=0, flag='unavailable')
 
         tm = max(1, PLAYED[p['team']])          # matches the CLUB has played
-        share = min(1.0, p['minutes'] / (90.0 * tm))
-        start_share = min(1.0, p['starts'] / tm)
+        rec = weighted_start_rate(recent.get(p['id']))
+        if rec:
+            # Per-match history available: weight the latest appearance most,
+            # so a player who has just broken into the XI is not scored as a
+            # rotation risk on the strength of an earlier benching.
+            start_share, share = rec
+            conf = min(0.88, tm / (tm + 0.6))
+        else:
+            # Season totals only. These cannot distinguish a recent promotion
+            # from a recent demotion, so stay closer to the prior.
+            share = min(1.0, p['minutes'] / (90.0 * tm))
+            start_share = min(1.0, p['starts'] / tm)
+            conf = tm / (tm + 1.0)              # 1 match -> 0.50, 2 -> 0.67
         raw = 0.65 * start_share + 0.35 * share
-        conf = tm / (tm + 1.0)                   # 1 match -> 0.50, 2 -> 0.67
         p_start = conf * raw + (1 - conf) * PRIORS[p['id']]['start']
         p_start *= ch / 100
         p_play = min(0.98, p_start + (1 - p_start) * 0.35 * (ch / 100))

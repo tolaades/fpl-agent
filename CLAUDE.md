@@ -54,6 +54,14 @@ Gameweeks can be half-complete, with some clubs having played and others not.
 Assuming a fixed number of rounds marks every player from a club that hasn't
 played yet as a rotation risk.
 
+**Start probability uses recency weighting when per-match data is available.**
+`recency.py` pulls per-gameweek minutes from element-summary and weights the
+most recent match most heavily (DECAY 0.55). Season totals alone cannot tell
+"started GW1, benched GW2" from "benched GW1, started GW2", which are opposite
+signals for the next lineup. This was found when the model rated a player at a
+53% chance of starting who had just started, and undervalued him by 16 points
+over five gameweeks. `--no-recency` falls back to totals.
+
 **`clean_sheet_prob` is a plain Poisson.** It is known to be slightly
 optimistic because real scorelines are overdispersed. Fixing it properly needs
 per-gameweek history, which is a planned change, not a bug to patch with a
@@ -63,9 +71,9 @@ fudge factor.
 
 Stated plainly because the brief tells the user about them every week:
 
-- **No lineup or rotation model.** Projections assume the last XI repeats. This
-  is the single largest source of error. European fixture congestion is
-  invisible to the model.
+- **No lineup or rotation model.** Recency weighting helps, but the model still
+  cannot see a press conference or a predicted lineup, and has no knowledge of
+  European fixture congestion. This remains the largest source of error.
 - **No press conference ingestion.** The agent half covers this.
 - **Roughly a quarter of players have no prior-season record** (promoted clubs,
   new signings) and fall back to positional averages. `run_week.py` names them

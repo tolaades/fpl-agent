@@ -1,4 +1,17 @@
 {
   "entry_id": 716814,
-  "free_transfers": 2
+  "free_transfers": 0,
+
+  "chips": {
+    "bench_boost": "used",
+    "triple_captain": "used GW3 on Haaland",
+    "wildcard": "planned GW6 (10 Oct) - after the international break, 5 matches of data, ahead of the GW7-11 run",
+    "free_hit": "pencilled GW12 (28 Nov) - lowest ceiling week, top sides play each other. Revisit at GW9. Override for any real blank gameweek. Expires GW19."
+  },
+
+  "notes": [
+    "Holding £4.3m to buy Palmer (CHE, £9.6m) in GW4, funding it by selling Groß or Wharton.",
+    "Mbeumo (MUN, £8.0m) is the alternative to Palmer at similar projected output for £1.6m less.",
+    "Roll free transfers toward the GW6 wildcard where possible."
+  ]
 }
