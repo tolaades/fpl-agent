@@ -1,6 +1,6 @@
 # Gameweek 4 brief
 
-Deadline **Sat 12 Sep 12:30 UTC** | bank £4.2m | 0 free transfer(s) | horizon GW4-8
+Deadline **Sat 12 Sep 08:30 America/New_York** | bank £4.3m | 0 free transfer(s) | horizon GW4-8
 
 ## Recommended XI (4-4-2) - 52.3 projected, 59.4 with captain
 
@@ -43,7 +43,7 @@ No flags on any of your 15.
 - **Triple Captain**: used GW3 on Haaland
 - **Wildcard**: planned GW6 (10 Oct) - after the international break, 5 matches of data, ahead of the GW7-11 run
 - **Free Hit**: pencilled GW12 (28 Nov) - lowest ceiling week, top sides play each other. Revisit at GW9. Override for any real blank gameweek. Expires GW19.
-- Holding £4.3m to buy Palmer (CHE, £9.6m) in GW4, funding it by selling Groß or Wharton.
+- Holding £4.3m to buy Palmer (CHE, £9.6m) in GW4 (next week), funding it by selling Groß or Wharton.
 - Mbeumo (MUN, £8.0m) is the alternative to Palmer at similar projected output for £1.6m less.
 - Roll free transfers toward the GW6 wildcard where possible.
 
