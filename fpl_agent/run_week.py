@@ -20,6 +20,17 @@ HIST_URL = ('https://raw.githubusercontent.com/vaastav/Fantasy-Premier-League'
 UA = 'Mozilla/5.0 (compatible; fpl-agent/1.0)'
 
 
+def _api(path, timeout=60):
+    """GET a JSON endpoint. Returns None rather than raising on failure."""
+    try:
+        req = urllib.request.Request(f'{API}{path}', headers={'User-Agent': UA})
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return json.loads(r.read())
+    except Exception as exc:
+        print(f'warning: {path} failed ({exc})', file=sys.stderr)
+        return None
+
+
 def fetch(url, dest):
     req = urllib.request.Request(url, headers={'User-Agent': UA})
     with urllib.request.urlopen(req, timeout=60) as r:
@@ -43,17 +54,44 @@ def refresh(cache, season='2025-26'):
 
 
 def load_squad(e, path):
-    """Squad file: {"entry_id": 123} or {"players": ["Haaland", ...],
-    "bank": 0.4, "free_transfers": 2}."""
+    """Resolve the squad you will actually field, not the one you last fielded.
+
+    FPL only writes a picks record once a deadline passes, so between Monday
+    and Friday /entry/{id}/event/{gw}/picks/ returns the previous gameweek's
+    team. Any transfer made this week is invisible to it. We therefore read the
+    last confirmed picks and replay any transfers already logged for the
+    upcoming gameweek on top.
+
+    Bank and free transfers from squad.json always win when present, because
+    the API's values are also a gameweek behind.
+    """
     cfg = json.load(open(path))
-    if cfg.get('entry_id'):  # null or absent falls through to the name list
-        gw = e.NEXT - 1
-        url = f"{API}/entry/{cfg['entry_id']}/event/{max(1, gw)}/picks/"
-        req = urllib.request.Request(url, headers={'User-Agent': UA})
-        picks = json.loads(urllib.request.urlopen(req, timeout=60).read())
+    bank = cfg.get('bank')
+    ft = cfg.get('free_transfers')
+
+    if cfg.get('entry_id'):
+        eid = cfg['entry_id']
+        gw = max(1, e.NEXT - 1)
+        picks = _api(f'/entry/{eid}/event/{gw}/picks/')
         ids = [p['element'] for p in picks['picks']]
-        bank = picks.get('entry_history', {}).get('bank', 0) / 10
-        return ids, bank, cfg.get('free_transfers', 1)
+
+        pending = [t for t in (_api(f'/entry/{eid}/transfers/') or [])
+                   if t.get('event') == e.NEXT]
+        for t in reversed(pending):          # oldest first
+            if t['element_out'] in ids:
+                ids[ids.index(t['element_out'])] = t['element_in']
+        if pending:
+            names = ', '.join(
+                f"{e.EL[t['element_out']]['web_name']} -> {e.EL[t['element_in']]['web_name']}"
+                for t in reversed(pending))
+            print(f'applied {len(pending)} pending transfer(s): {names}')
+
+        if bank is None:
+            bank = picks.get('entry_history', {}).get('bank', 0) / 10
+        if ft is None:
+            ft = 1
+        return ids, bank, ft
+
     by_name = {p['web_name']: p['id'] for p in e.B['elements']}
     ids, missing = [], []
     for n in cfg['players']:
@@ -63,7 +101,7 @@ def load_squad(e, path):
             missing.append(n)
     if missing:
         print(f'WARNING: could not match {missing}', file=sys.stderr)
-    return ids, cfg.get('bank', 0.0), cfg.get('free_transfers', 1)
+    return ids, bank or 0.0, ft if ft is not None else 1
 
 
 def ticker(e, proj):
@@ -82,8 +120,17 @@ def brief(e, ids, bank, ft, horizon, cfg_extra=None):
     L = []
     ev = [x for x in e.B['events'] if x['id'] == e.NEXT][0]
     dl = datetime.datetime.fromisoformat(ev['deadline_time'].replace('Z', '+00:00'))
+    tzname = cfg_extra.get('timezone')
+    if tzname:
+        try:
+            from zoneinfo import ZoneInfo
+            dl = dl.astimezone(ZoneInfo(tzname))
+        except Exception:
+            tzname = 'UTC'
+    else:
+        tzname = 'UTC'
     L.append(f"# Gameweek {e.NEXT} brief")
-    L.append(f"\nDeadline **{dl:%a %d %b %H:%M} UTC** | bank £{bank:.1f}m "
+    L.append(f"\nDeadline **{dl:%a %d %b %H:%M} {tzname}** | bank £{bank:.1f}m "
              f"| {ft} free transfer(s) | horizon GW{e.GWS[0]}-{e.GWS[-1]}\n")
 
     sq = [(e.EL[i], e.PROJ[i]) for i in ids if i in e.EL]

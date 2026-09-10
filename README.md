@@ -40,8 +40,15 @@ or list the players by name:
 }
 ```
 
-The `entry_id` route is better. It returns your bank and purchase prices, which
-a name list cannot.
+The `entry_id` route is better. It resolves your squad automatically and
+replays any transfers you have already confirmed for the upcoming gameweek.
+
+Set `bank` and `free_transfers` explicitly anyway: FPL's API reports both as
+they stood at the last deadline, so mid-week they are stale. Values in
+squad.json always win.
+
+`timezone` is an IANA name such as `America/New_York`. The deadline is rendered
+in it, which matters because the job runs on a UTC machine.
 
 Add `--offline` to rerun against the cached snapshot without refetching.
 

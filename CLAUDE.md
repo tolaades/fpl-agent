@@ -54,6 +54,14 @@ Gameweeks can be half-complete, with some clubs having played and others not.
 Assuming a fixed number of rounds marks every player from a club that hasn't
 played yet as a rotation risk.
 
+**The squad loader replays pending transfers.** FPL writes a picks record only
+after a deadline passes, so `/entry/{id}/event/{gw}/picks/` returns *last*
+gameweek's team all week. `load_squad` reads the last confirmed picks then
+applies anything in `/entry/{id}/transfers/` for the upcoming gameweek. Without
+this, every brief between Monday and Friday advises on a squad you no longer
+own. Bank and free transfers in squad.json override the API for the same
+reason.
+
 **Start probability uses recency weighting when per-match data is available.**
 `recency.py` pulls per-gameweek minutes from element-summary and weights the
 most recent match most heavily (DECAY 0.55). Season totals alone cannot tell
