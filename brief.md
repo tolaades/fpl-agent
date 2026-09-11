@@ -27,7 +27,7 @@ Deadline **Sat 12 Sep 08:30 America/New_York** | bank £4.3m | 0 free transfer(s
 | Wharton | Mbeumo | MUN | £7.9m | +13.63 |
 | Kayode | Guéhi | MCI | £6.0m | +13.58 |
 | Wharton | Saka | ARS | £9.5m | +11.73 |
-| Wharton | Palmer | CHE | £9.6m | +11.34 |
+| Wharton | Palmer | CHE | £9.7m | +11.34 |
 | Kayode | Gabriel | ARS | £8.0m | +9.60 |
 | Cherki | B.Fernandes | MUN | £12.0m | +9.40 |
 | Kayode | Gvardiol | MCI | £5.6m | +8.71 |

@@ -75,6 +75,22 @@ optimistic because real scorelines are overdispersed. Fixing it properly needs
 per-gameweek history, which is a planned change, not a bug to patch with a
 fudge factor.
 
+## Scoring
+
+`run_week.py` writes `predictions/gw{N}.json` before each gameweek. `score.py`
+grades it afterwards against `/event/{N}/live/` and rebuilds `scorecard.md`.
+Both run daily in the workflow.
+
+Predictions are recorded *before* the gameweek so the comparison cannot be
+retrofitted. Do not edit a prediction file after the fact, and do not tune any
+constant on fewer than five scored gameweeks -- with one or two, bias and
+variance are indistinguishable and you will be fitting to noise.
+
+The metrics that matter: `bias` (actual minus predicted, per player) says
+whether the model is systematically optimistic. The minutes table says whether
+misses come from the attacking model or from players being substituted early,
+which are different problems with different fixes.
+
 ## Known limitations
 
 Stated plainly because the brief tells the user about them every week:
@@ -86,6 +102,12 @@ Stated plainly because the brief tells the user about them every week:
 - **Roughly a quarter of players have no prior-season record** (promoted clubs,
   new signings) and fall back to positional averages. `run_week.py` names them
   in the brief.
+- **Minutes are projected as a single number, not a distribution.** The model
+  estimates how likely a player is to start but not how long he lasts. An
+  early substitution costs an appearance point, the clean sheet and usually the
+  defensive contribution. In GW3 four of eleven recommended starters played
+  under 60 minutes. `recency.py` already fetches the per-match data needed to
+  model this; it just isn't used for it yet.
 - **`price_change_projections` is unused.** It exists in the 2026/27 API and
   would tell you whether a transfer must happen tonight. Cheap win, not done.
 

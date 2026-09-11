@@ -62,6 +62,7 @@ Add `--offline` to rerun against the cached snapshot without refetching.
 | `optimise.py` | Best XI, transfer ranking, and the full-squad ILP |
 | `recency.py` | Per-match minutes, weighted toward the latest appearance |
 | `run_week.py` | Fetches, runs everything, writes the brief |
+| `score.py` | Grades past predictions against real results |
 
 Player IDs change between seasons; the stable identifier is `code`, which is
 what the historical join uses.

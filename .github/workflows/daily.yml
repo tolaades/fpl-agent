@@ -34,6 +34,13 @@ jobs:
             --cache ./cache \
             --out brief.md
 
+      - name: Score past gameweeks
+        # Grades predictions recorded before each gameweek against actual
+        # results. Skipped on failure so a scoring problem never blocks the
+        # brief, which is the part with a deadline attached.
+        continue-on-error: true
+        run: python -m fpl_agent.score --out scorecard.md
+
       - name: Archive today's snapshot
         # Keeping dated copies means you can replay any past gameweek and check
         # what the model projected against what actually happened.
@@ -46,6 +53,6 @@ jobs:
         run: |
           git config user.name  "fpl-agent"
           git config user.email "actions@github.com"
-          git add brief.md snapshots/
+          git add brief.md snapshots/ predictions/ scorecard.md
           git diff --staged --quiet || git commit -m "Brief for $(date -u +%Y-%m-%d)"
           git push

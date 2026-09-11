@@ -53,7 +53,7 @@ def refresh(cache, season='2025-26'):
     return boot, fixt, hist
 
 
-def load_squad(e, path):
+def load_squad(e, path, offline=False):
     """Resolve the squad you will actually field, not the one you last fielded.
 
     FPL only writes a picks record once a deadline passes, so between Monday
@@ -69,10 +69,16 @@ def load_squad(e, path):
     bank = cfg.get('bank')
     ft = cfg.get('free_transfers')
 
-    if cfg.get('entry_id'):
+    if cfg.get('entry_id') and not offline:
         eid = cfg['entry_id']
         gw = max(1, e.NEXT - 1)
         picks = _api(f'/entry/{eid}/event/{gw}/picks/')
+        if not picks or not picks.get('picks'):
+            # Never let an API hiccup kill the run. squad.json's name list is
+            # the fallback, and the brief says which source was used.
+            print('WARNING: could not fetch your squad; falling back to the '
+                  'player list in squad.json', file=sys.stderr)
+            return _from_names(e, cfg, bank, ft)
         ids = [p['element'] for p in picks['picks']]
 
         pending = [t for t in (_api(f'/entry/{eid}/transfers/') or [])
@@ -92,9 +98,15 @@ def load_squad(e, path):
             ft = 1
         return ids, bank, ft
 
-    by_name = {p['web_name']: p['id'] for p in e.B['elements']}
+    return _from_names(e, cfg, bank, ft)
+
+
+def _from_names(e, cfg, bank, ft):
+    by_name = {}
+    for p in e.B['elements']:
+        by_name.setdefault(p['web_name'], p['id'])
     ids, missing = [], []
-    for n in cfg['players']:
+    for n in cfg.get('players', []):
         if n in by_name:
             ids.append(by_name[n])
         else:
@@ -190,6 +202,34 @@ def brief(e, ids, bank, ft, horizon, cfg_extra=None):
     return '\n'.join(L)
 
 
+def save_predictions(e, xi, path='./predictions'):
+    """Write this gameweek's projections so score.py can grade them later.
+
+    Recorded before the gameweek is played, so the comparison cannot be
+    retrofitted. This is the only way to find out whether the model's constants
+    are set correctly rather than merely plausible.
+    """
+    os.makedirs(path, exist_ok=True)
+    players = {}
+    for p in e.B['elements']:
+        pr = e.PROJ[p['id']]
+        if pr['per'][0]['xp'] <= 0 and pr['prof']['xmins'] < 45:
+            continue
+        players[str(p['id'])] = dict(
+            name=p['web_name'], pos=e.POS[p['element_type']],
+            xp=round(pr['per'][0]['xp'], 3),
+            xmins=round(pr['prof']['xmins'], 1))
+    out = dict(gw=e.NEXT,
+               generated=datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+               xi=[p['id'] for p, _ in xi['xi']],
+               captain=xi['captain'][0]['id'],
+               players=players)
+    dest = os.path.join(path, f'gw{e.NEXT}.json')
+    with open(dest, 'w') as f:
+        json.dump(out, f)
+    return dest, len(players)
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--squad', required=True)
@@ -210,7 +250,7 @@ def main():
         boot, fixt, hist = refresh(a.cache)
 
     e = build(boot, fixt, hist, horizon=a.horizon)
-    ids, bank, ft = load_squad(e, a.squad)
+    ids, bank, ft = load_squad(e, a.squad, offline=a.offline)
 
     # Second pass with per-match minutes. Season totals cannot tell a player
     # who has just won his place from one who has just lost it, and that
@@ -227,6 +267,12 @@ def main():
         print(f'  got {len(recent)}')
         e = build(boot, fixt, hist, horizon=a.horizon, recent=recent)
     text = brief(e, ids, bank, ft, a.horizon, cfg_extra=json.load(open(a.squad)))
+
+    sq = [(e.EL[i], e.PROJ[i]) for i in ids if i in e.EL]
+    xi = best_eleven(e, sq)
+    if xi:
+        dest, count = save_predictions(e, xi)
+        print(f'recorded {count} projections to {dest}')
     with open(a.out, 'w') as f:
         f.write(text)
     print(f'wrote {a.out} for GW{e.NEXT} ({len(ids)} players)')
