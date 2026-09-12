@@ -12,6 +12,7 @@ from collections import defaultdict
 
 from .engine import build
 from .recency import fetch_recent_minutes
+from .team_state import fetch_state
 from .optimise import optimise, best_eleven, rank_transfers
 
 API = 'https://fantasy.premierleague.com/api'
@@ -54,59 +55,49 @@ def refresh(cache, season='2025-26'):
 
 
 def load_squad(e, path, offline=False):
-    """Resolve the squad you will actually field, not the one you last fielded.
+    """Resolve your team. Prefers the API; squad.json is override and fallback.
 
-    FPL only writes a picks record once a deadline passes, so between Monday
-    and Friday /entry/{id}/event/{gw}/picks/ returns the previous gameweek's
-    team. Any transfer made this week is invisible to it. We therefore read the
-    last confirmed picks and replay any transfers already logged for the
-    upcoming gameweek on top.
-
-    Bank and free transfers from squad.json always win when present, because
-    the API's values are also a gameweek behind.
+    Anything you set explicitly in squad.json wins, so you can correct the
+    model when you know better. Leave a field out and it is read from FPL.
     """
     cfg = json.load(open(path))
-    bank = cfg.get('bank')
-    ft = cfg.get('free_transfers')
+    state_notes = []
 
     if cfg.get('entry_id') and not offline:
-        eid = cfg['entry_id']
-        gw = max(1, e.NEXT - 1)
-        picks = _api(f'/entry/{eid}/event/{gw}/picks/')
-        if not picks or not picks.get('picks'):
-            # Never let an API hiccup kill the run. squad.json's name list is
-            # the fallback, and the brief says which source was used.
-            print('WARNING: could not fetch your squad; falling back to the '
-                  'player list in squad.json', file=sys.stderr)
-            return _from_names(e, cfg, bank, ft)
-        ids = [p['element'] for p in picks['picks']]
+        try:
+            st = fetch_state(cfg['entry_id'], e.NEXT, e.EL)
+            ids = st['squad']
+            bank = cfg['bank'] if cfg.get('bank') is not None else st['bank']
+            ft = (cfg['free_transfers'] if cfg.get('free_transfers') is not None
+                  else st['free_transfers'])
+            state_notes = st['notes']
+            for n in state_notes:
+                print(n)
+            if cfg.get('players'):
+                listed = {p for p in cfg['players']}
+                actual = {e.EL[i]['web_name'] for i in ids}
+                drift = listed ^ actual
+                if drift:
+                    state_notes.append(
+                        'squad.json disagrees with your actual team on: '
+                        + ', '.join(sorted(drift))
+                        + '. The API was used. Update or remove the players list.')
+                    print(state_notes[-1], file=sys.stderr)
+            return ids, bank, ft, state_notes
+        except Exception as exc:
+            print(f'WARNING: could not read your team ({exc}); '
+                  'falling back to squad.json', file=sys.stderr)
 
-        pending = [t for t in (_api(f'/entry/{eid}/transfers/') or [])
-                   if t.get('event') == e.NEXT]
-        for t in reversed(pending):          # oldest first
-            if t['element_out'] in ids:
-                ids[ids.index(t['element_out'])] = t['element_in']
-        if pending:
-            names = ', '.join(
-                f"{e.EL[t['element_out']]['web_name']} -> {e.EL[t['element_in']]['web_name']}"
-                for t in reversed(pending))
-            print(f'applied {len(pending)} pending transfer(s): {names}')
-
-        if bank is None:
-            bank = picks.get('entry_history', {}).get('bank', 0) / 10
-        if ft is None:
-            ft = 1
-        return ids, bank, ft
-
-    return _from_names(e, cfg, bank, ft)
+    ids, bank, ft = _from_names(e, cfg, cfg.get('bank'), cfg.get('free_transfers'))
+    return ids, bank, ft, state_notes
 
 
 def _norm_name(s):
     """Compare names without accents. squad.json is hand-edited, and typing
-    Gross for Gro\u00df or Joao for Jo\u00e3o silently dropped players from the squad.
+    Gross for Groß or Joao for João silently dropped players from the squad.
     """
     import unicodedata
-    s = (s or '').replace('\u00df', 'ss')
+    s = (s or '').replace('ß', 'ss')
     s = unicodedata.normalize('NFD', s)
     return ''.join(ch for ch in s if unicodedata.category(ch) != 'Mn').lower().strip()
 
@@ -158,6 +149,13 @@ def brief(e, ids, bank, ft, horizon, cfg_extra=None):
 
     sq = [(e.EL[i], e.PROJ[i]) for i in ids if i in e.EL]
     xi = best_eleven(e, sq)
+    if xi is None:
+        # Happens when squad.json lists too few players, or names failed to
+        # match. Say so plainly instead of dying on a NoneType.
+        L.append(f'\n## Cannot pick a team\n')
+        L.append(f'Only {len(sq)} of 15 players resolved, so no legal XI exists. '
+                 'Check the `players` list in squad.json against your actual squad.')
+        return '\n'.join(L)
 
     L.append(f"## Recommended XI ({xi['formation']}) "
              f"- {xi['score']:.1f} projected, {xi['score']+xi['captain'][1]['per'][0]['xp']:.1f} with captain\n")
@@ -193,7 +191,7 @@ def brief(e, ids, bank, ft, horizon, cfg_extra=None):
                  + (f" | {ch}% to play" if ch is not None else ''))
 
     chips = cfg_extra.get('chips') or {}
-    notes = cfg_extra.get('notes') or []
+    notes = (cfg_extra.get('_state') or []) + (cfg_extra.get('notes') or [])
     if chips or notes:
         L.append('\n## Your plan\n')
         for k, v in chips.items():
@@ -211,6 +209,22 @@ def brief(e, ids, bank, ft, horizon, cfg_extra=None):
         L.append(f"- No prior-season record for: {', '.join(low)}. "
                  'Their numbers rest on this season alone and are the least reliable.')
     return '\n'.join(L)
+
+
+def save_roster(e, path='players.json'):
+    """Publish a small roster so a browser can resolve player names.
+
+    bootstrap-static sends no CORS headers and is ~1.6MB, so a web page cannot
+    read it. This is the same data trimmed to what name-matching needs, small
+    enough to fetch from the repo.
+    """
+    rows = [dict(id=p['id'], name=p['web_name'],
+                 team=e.TEAMS[p['team']]['short_name'],
+                 pos=e.POS[p['element_type']], cost=p['now_cost'] / 10.0)
+            for p in e.B['elements']]
+    with open(path, 'w') as f:
+        json.dump(dict(gw=e.NEXT, players=rows), f, ensure_ascii=False)
+    return len(rows)
 
 
 def save_predictions(e, xi, path='./predictions'):
@@ -261,7 +275,7 @@ def main():
         boot, fixt, hist = refresh(a.cache)
 
     e = build(boot, fixt, hist, horizon=a.horizon)
-    ids, bank, ft = load_squad(e, a.squad, offline=a.offline)
+    ids, bank, ft, state_notes = load_squad(e, a.squad, offline=a.offline)
 
     # Second pass with per-match minutes. Season totals cannot tell a player
     # who has just won his place from one who has just lost it, and that
@@ -277,12 +291,20 @@ def main():
         recent = fetch_recent_minutes(sorted(shortlist))
         print(f'  got {len(recent)}')
         e = build(boot, fixt, hist, horizon=a.horizon, recent=recent)
-    text = brief(e, ids, bank, ft, a.horizon, cfg_extra=json.load(open(a.squad)))
+    text = brief(e, ids, bank, ft, a.horizon, cfg_extra=dict(json.load(open(a.squad)), _state=state_notes))
 
     sq = [(e.EL[i], e.PROJ[i]) for i in ids if i in e.EL]
     xi = best_eleven(e, sq)
+    if xi is None:
+        # Happens when squad.json lists too few players, or names failed to
+        # match. Say so plainly instead of dying on a NoneType.
+        L.append(f'\n## Cannot pick a team\n')
+        L.append(f'Only {len(sq)} of 15 players resolved, so no legal XI exists. '
+                 'Check the `players` list in squad.json against your actual squad.')
+        return '\n'.join(L)
     if xi:
         dest, count = save_predictions(e, xi)
+        print(f'published roster of {save_roster(e)} players')
         print(f'recorded {count} projections to {dest}')
     with open(a.out, 'w') as f:
         f.write(text)
