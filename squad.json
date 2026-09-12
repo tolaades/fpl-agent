@@ -1,12 +1,24 @@
 {
-  "entry_id": 716814,
+  "entry_id": null,
   "timezone": "America/New_York",
-  "bank": null,
-  "free_transfers": null,
+  "bank": 0.1,
+  "free_transfers": 0,
   "players": [
-    "Kinsky", "Lammens", "Virgil", "Calafiori", "Kayode", "Ajer", "Shaw",
-    "Szoboszlai", "Schade", "Palmer", "Gross", "Cherki",
-    "Joao Pedro", "Haaland", "Wissa"
+    "Kinsky",
+    "Lammens",
+    "Virgil",
+    "Calafiori",
+    "Kayode",
+    "Ajer",
+    "Shaw",
+    "Szoboszlai",
+    "Schade",
+    "Palmer",
+    "Gross",
+    "Cherki",
+    "Joao Pedro",
+    "Haaland",
+    "Wissa"
   ],
   "chips": {
     "wildcard": "planned GW6 (10 Oct) - after the international break, 5 matches of data, ahead of the GW7-11 run",
