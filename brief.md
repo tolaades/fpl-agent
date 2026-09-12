@@ -2,7 +2,7 @@
 
 Deadline **Sat 12 Sep 08:30 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW4-8
 
-## Recommended XI (4-4-2) - 51.5 projected, 58.6 with captain
+## Recommended XI (3-5-2) - 54.7 projected, 61.8 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
@@ -10,15 +10,15 @@ Deadline **Sat 12 Sep 08:30 America/New_York** | bank £0.1m | 0 free transfer(s
 | DEF | Calafiori | ARS | SUN(A) | 1.53 | 0.66 | 5.62 |
 | DEF | Virgil | LIV | FUL(H) | 3.32 | 0.82 | 4.04 |
 | DEF | Kayode | BRE | BOU(A) | 1.27 | 1.35 | 3.55 |
-| DEF | Ajer | BRE | BOU(A) | 1.27 | 1.35 | 3.53 |
 | MID | Cherki | MCI | MUN(A) | 1.88 | 1.36 | 6.11 |
 | MID | Palmer | CHE | HUL(H) | 2.01 | 0.89 | 5.89 |
 | MID | Szoboszlai | LIV | FUL(H) | 3.32 | 0.82 | 5.45 |
+| MID | Groß | BHA | COV(A) | 1.83 | 0.71 | 4.20 |
 | MID | Schade | BRE | BOU(A) | 1.27 | 1.35 | 4.14 |
 | FWD | Haaland **(C)** | MCI | MUN(A) | 1.88 | 1.36 | 7.08 |
-| FWD | Wissa | NEW | LEE(A) | 1.12 | 1.49 | 3.37 |
+| FWD | João Pedro | CHE | HUL(H) | 2.01 | 0.89 | 5.83 |
 
-**Bench:** Shaw (1.6), Lammens (2.3)
+**Bench:** Ajer (3.5), Wissa (3.4), Shaw (1.6), Lammens (2.3)
 
 ## Transfers (0 free)
 
