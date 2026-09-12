@@ -101,14 +101,25 @@ def load_squad(e, path, offline=False):
     return _from_names(e, cfg, bank, ft)
 
 
+def _norm_name(s):
+    """Compare names without accents. squad.json is hand-edited, and typing
+    Gross for Gro\u00df or Joao for Jo\u00e3o silently dropped players from the squad.
+    """
+    import unicodedata
+    s = (s or '').replace('\u00df', 'ss')
+    s = unicodedata.normalize('NFD', s)
+    return ''.join(ch for ch in s if unicodedata.category(ch) != 'Mn').lower().strip()
+
+
 def _from_names(e, cfg, bank, ft):
     by_name = {}
     for p in e.B['elements']:
-        by_name.setdefault(p['web_name'], p['id'])
+        by_name.setdefault(_norm_name(p['web_name']), p['id'])
     ids, missing = [], []
     for n in cfg.get('players', []):
-        if n in by_name:
-            ids.append(by_name[n])
+        key = _norm_name(n)
+        if key in by_name:
+            ids.append(by_name[key])
         else:
             missing.append(n)
     if missing:
