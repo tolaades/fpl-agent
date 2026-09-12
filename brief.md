@@ -1,6 +1,6 @@
 # Gameweek 4 brief
 
-Deadline **Sat 12 Sep 08:30 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW4-8
+Deadline **Sat 12 Sep 08:30 America/New_York** | bank £4.2m | 1 free transfer(s) | horizon GW4-8
 
 ## Recommended XI (4-4-2) - 52.3 projected, 59.4 with captain
 
@@ -20,18 +20,18 @@ Deadline **Sat 12 Sep 08:30 America/New_York** | bank £0.1m | 0 free transfer(s
 
 **Bench:** Wissa (3.4), Wharton (3.2), Shaw (1.6), Lammens (2.3)
 
-## Transfers (0 free)
+## Transfers (1 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Virgil | Guéhi | MCI | £6.0m | +9.85 |
-| Shaw | Egan | HUL | £4.1m | +8.51 |
-| Shaw | Ajayi | HUL | £4.2m | +5.98 |
-| Shaw | Mendy | HUL | £4.1m | +5.22 |
-| Shaw | Justin | LEE | £4.5m | +5.11 |
-| Virgil | Gvardiol | MCI | £5.6m | +4.98 |
-| Shaw | Bogle | LEE | £4.5m | +4.74 |
-| Shaw | Jair Cunha | NFO | £4.5m | +4.39 |
+| Shaw | Guéhi | MCI | £6.0m | +15.73 |
+| Wharton | Mbeumo | MUN | £7.9m | +13.63 |
+| Shaw | Gabriel | ARS | £8.0m | +11.75 |
+| Wharton | Saka | ARS | £9.5m | +11.73 |
+| Wharton | Palmer | CHE | £9.7m | +11.34 |
+| Shaw | Gvardiol | MCI | £5.6m | +10.86 |
+| Shaw | White | ARS | £5.5m | +9.60 |
+| Cherki | B.Fernandes | MUN | £12.0m | +9.40 |
 
 ## Risk in your squad
 
@@ -39,13 +39,10 @@ Deadline **Sat 12 Sep 08:30 America/New_York** | bank £0.1m | 0 free transfer(s
 
 ## Your plan
 
-- **Bench Boost**: used
-- **Triple Captain**: used GW3 on Haaland (returned 27)
 - **Wildcard**: planned GW6 (10 Oct) - after the international break, 5 matches of data, ahead of the GW7-11 run
-- **Free Hit**: pencilled GW12 (28 Nov) - lowest ceiling week. Revisit at GW9. Override for any real blank gameweek. Expires GW19.
-- GW4: bought Palmer (CHE), sold Gross. Bank 0.1m, 0 free transfers.
+- **Free Hit**: pencilled GW12 (28 Nov). Revisit at GW9. Override for any real blank gameweek. Expires GW19.
+- GW4: Palmer in, Wharton out. Captain Haaland, vice Palmer.
 - Roll transfers toward the GW6 wildcard (10 Oct).
-- Free Hit still pencilled GW12. Revisit at GW9.
 
 ## What this model cannot see
 
