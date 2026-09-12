@@ -1,8 +1,8 @@
 # Gameweek 4 brief
 
-Deadline **Sat 12 Sep 08:30 America/New_York** | bank £4.2m | 1 free transfer(s) | horizon GW4-8
+Deadline **Sat 12 Sep 08:30 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW4-8
 
-## Recommended XI (4-4-2) - 52.3 projected, 59.4 with captain
+## Recommended XI (4-4-2) - 51.5 projected, 58.6 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
@@ -12,26 +12,26 @@ Deadline **Sat 12 Sep 08:30 America/New_York** | bank £4.2m | 1 free transfer(s
 | DEF | Kayode | BRE | BOU(A) | 1.27 | 1.35 | 3.55 |
 | DEF | Ajer | BRE | BOU(A) | 1.27 | 1.35 | 3.53 |
 | MID | Cherki | MCI | MUN(A) | 1.88 | 1.36 | 6.11 |
+| MID | Palmer | CHE | HUL(H) | 2.01 | 0.89 | 5.89 |
 | MID | Szoboszlai | LIV | FUL(H) | 3.32 | 0.82 | 5.45 |
-| MID | Groß | BHA | COV(A) | 1.83 | 0.71 | 4.20 |
 | MID | Schade | BRE | BOU(A) | 1.27 | 1.35 | 4.14 |
 | FWD | Haaland **(C)** | MCI | MUN(A) | 1.88 | 1.36 | 7.08 |
-| FWD | João Pedro | CHE | HUL(H) | 2.01 | 0.89 | 5.83 |
+| FWD | Wissa | NEW | LEE(A) | 1.12 | 1.49 | 3.37 |
 
-**Bench:** Wissa (3.4), Wharton (3.2), Shaw (1.6), Lammens (2.3)
+**Bench:** Shaw (1.6), Lammens (2.3)
 
-## Transfers (1 free)
+## Transfers (0 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Shaw | Guéhi | MCI | £6.0m | +15.73 |
-| Wharton | Mbeumo | MUN | £7.9m | +13.63 |
-| Shaw | Gabriel | ARS | £8.0m | +11.75 |
-| Wharton | Saka | ARS | £9.5m | +11.73 |
-| Wharton | Palmer | CHE | £9.7m | +11.34 |
-| Shaw | Gvardiol | MCI | £5.6m | +10.86 |
-| Shaw | White | ARS | £5.5m | +9.60 |
-| Cherki | B.Fernandes | MUN | £12.0m | +9.40 |
+| Virgil | Guéhi | MCI | £6.0m | +9.85 |
+| Shaw | Egan | HUL | £4.1m | +8.51 |
+| Shaw | Ajayi | HUL | £4.2m | +5.98 |
+| Shaw | Mendy | HUL | £4.1m | +5.22 |
+| Shaw | Justin | LEE | £4.5m | +5.11 |
+| Virgil | Gvardiol | MCI | £5.6m | +4.98 |
+| Shaw | Bogle | LEE | £4.5m | +4.74 |
+| Shaw | Jair Cunha | NFO | £4.5m | +4.39 |
 
 ## Risk in your squad
 
