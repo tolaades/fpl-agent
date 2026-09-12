@@ -1,22 +1,19 @@
 {
   "entry_id": 716814,
   "timezone": "America/New_York",
-  "bank": 0.1,
-  "free_transfers": 0,
+  "bank": null,
+  "free_transfers": null,
   "players": [
-    "Lammens", "Kinsky", "Virgil", "Shaw", "Calafiori", "Kayode", "Ajer",
-    "Cherki", "Szoboszlai", "Schade", "Palmer", "Wharton",
-    "João Pedro", "Haaland", "Wissa"
+    "Kinsky", "Lammens", "Virgil", "Calafiori", "Kayode", "Ajer", "Shaw",
+    "Szoboszlai", "Schade", "Palmer", "Gross", "Cherki",
+    "Joao Pedro", "Haaland", "Wissa"
   ],
   "chips": {
-    "bench_boost": "used",
-    "triple_captain": "used GW3 on Haaland (returned 27)",
     "wildcard": "planned GW6 (10 Oct) - after the international break, 5 matches of data, ahead of the GW7-11 run",
-    "free_hit": "pencilled GW12 (28 Nov) - lowest ceiling week. Revisit at GW9. Override for any real blank gameweek. Expires GW19."
+    "free_hit": "pencilled GW12 (28 Nov). Revisit at GW9. Override for any real blank gameweek. Expires GW19."
   },
   "notes": [
-    "GW4: bought Palmer (CHE), sold Gross. Bank 0.1m, 0 free transfers.",
-    "Roll transfers toward the GW6 wildcard (10 Oct).",
-    "Free Hit still pencilled GW12. Revisit at GW9."
+    "GW4: Palmer in, Wharton out. Captain Haaland, vice Palmer.",
+    "Roll transfers toward the GW6 wildcard (10 Oct)."
   ]
 }
