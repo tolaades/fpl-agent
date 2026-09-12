@@ -1,34 +1,22 @@
 {
   "entry_id": 716814,
-  "players": [
-    "Lammens",
-    "Kinsky",
-    "Virgil",
-    "Shaw",
-    "Calafiori",
-    "Kayode",
-    "Ajer",
-    "Cherki",
-    "Szoboszlai",
-    "Schade",
-    "Groß",
-    "Wharton",
-    "João Pedro",
-    "Haaland",
-    "Wissa"
-  ],
-  "bank": 4.3,
+  "timezone": "America/New_York",
+  "bank": 0.1,
   "free_transfers": 0,
+  "players": [
+    "Lammens", "Kinsky", "Virgil", "Shaw", "Calafiori", "Kayode", "Ajer",
+    "Cherki", "Szoboszlai", "Schade", "Palmer", "Wharton",
+    "João Pedro", "Haaland", "Wissa"
+  ],
   "chips": {
     "bench_boost": "used",
-    "triple_captain": "used GW3 on Haaland",
+    "triple_captain": "used GW3 on Haaland (returned 27)",
     "wildcard": "planned GW6 (10 Oct) - after the international break, 5 matches of data, ahead of the GW7-11 run",
-    "free_hit": "pencilled GW12 (28 Nov) - lowest ceiling week, top sides play each other. Revisit at GW9. Override for any real blank gameweek. Expires GW19."
+    "free_hit": "pencilled GW12 (28 Nov) - lowest ceiling week. Revisit at GW9. Override for any real blank gameweek. Expires GW19."
   },
   "notes": [
-    "Holding £4.3m to buy Palmer (CHE, £9.6m) in GW4 (next week), funding it by selling Groß or Wharton.",
-    "Mbeumo (MUN, £8.0m) is the alternative to Palmer at similar projected output for £1.6m less.",
-    "Roll free transfers toward the GW6 wildcard where possible."
-  ],
-  "timezone": "America/New_York"
+    "GW4: bought Palmer (CHE), sold Gross. Bank 0.1m, 0 free transfers.",
+    "Roll transfers toward the GW6 wildcard (10 Oct).",
+    "Free Hit still pencilled GW12. Revisit at GW9."
+  ]
 }
