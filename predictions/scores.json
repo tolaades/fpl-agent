@@ -109,5 +109,116 @@
     "mins": 90
    }
   ]
+ },
+ "5": {
+  "gw": 5,
+  "n": 214,
+  "bias": 0.5046401869158879,
+  "mae": 2.4910420560747664,
+  "pred_mean": 3.042088785046729,
+  "act_mean": 3.546728971962617,
+  "by_pos": {
+   "GKP": {
+    "n": 20,
+    "pred": 3.21925,
+    "act": 4.2
+   },
+   "DEF": {
+    "n": 79,
+    "pred": 2.880392405063291,
+    "act": 3.5569620253164556
+   },
+   "MID": {
+    "n": 97,
+    "pred": 3.060845360824742,
+    "act": 3.2989690721649483
+   },
+   "FWD": {
+    "n": 18,
+    "pred": 3.4538333333333333,
+    "act": 4.111111111111111
+   }
+  },
+  "starters": 131,
+  "short": 11,
+  "blanked": 7,
+  "xi_pred": 61.639,
+  "xi_act": 65,
+  "worst": [
+   {
+    "id": 426,
+    "name": "B.Fernandes",
+    "pos": "MID",
+    "xp": 6.673,
+    "xmins": 82.2,
+    "pts": 2,
+    "mins": 90
+   },
+   {
+    "id": 165,
+    "name": "Jo\u00e3o Pedro",
+    "pos": "FWD",
+    "xp": 4.368,
+    "xmins": 62.5,
+    "pts": 0,
+    "mins": 0
+   },
+   {
+    "id": 12,
+    "name": "Saka",
+    "pos": "MID",
+    "xp": 6.306,
+    "xmins": 79.7,
+    "pts": 2,
+    "mins": 80
+   },
+   {
+    "id": 565,
+    "name": "M.Sangar\u00e9",
+    "pos": "MID",
+    "xp": 4.115,
+    "xmins": 68.7,
+    "pts": 0,
+    "mins": 21
+   },
+   {
+    "id": 8,
+    "name": "Calafiori",
+    "pos": "DEF",
+    "xp": 5.104,
+    "xmins": 77.8,
+    "pts": 1,
+    "mins": 90
+   }
+  ],
+  "best": [
+   {
+    "id": 552,
+    "name": "Brobbey",
+    "pos": "FWD",
+    "xp": 1.834,
+    "xmins": 78.2,
+    "pts": 17,
+    "mins": 90
+   },
+   {
+    "id": 176,
+    "name": "Dasilva",
+    "pos": "DEF",
+    "xp": 1.376,
+    "xmins": 76.8,
+    "pts": 15,
+    "mins": 90
+   },
+   {
+    "id": 397,
+    "name": "Semenyo",
+    "pos": "MID",
+    "xp": 4.342,
+    "xmins": 82.6,
+    "pts": 17,
+    "mins": 90
+   }
+  ]
  }
 }
