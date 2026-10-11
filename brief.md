@@ -1,41 +1,41 @@
-# Gameweek 6 brief
+# Gameweek 7 brief
 
-Deadline **Sat 10 Oct 06:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW6-10
+Deadline **Sat 17 Oct 06:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW7-11
 
-## Recommended XI (3-5-2) - 56.1 projected, 65.7 with captain
+## Recommended XI (4-4-2) - 49.8 projected, 58.9 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
-| GKP | Lammens | MUN | TOT(H) | 2.29 | 0.54 | 3.61 |
-| DEF | Virgil | LIV | MCI(H) | 1.39 | 1.31 | 5.46 |
-| DEF | Calafiori | ARS | LEE(H) | 1.50 | 0.66 | 3.95 |
-| DEF | Ajer | BRE | AVL(A) | 1.59 | 0.97 | 3.79 |
-| MID | Groß **(C)** | BHA | SUN(A) | 2.50 | 1.22 | 9.55 |
-| MID | Schade | BRE | AVL(A) | 1.59 | 0.97 | 7.62 |
-| MID | Palmer | CHE | BOU(H) | 2.43 | 1.34 | 4.51 |
-| MID | Cherki | MCI | LIV(A) | 1.31 | 1.39 | 3.90 |
-| MID | Szoboszlai | LIV | MCI(H) | 1.39 | 1.31 | 3.00 |
-| FWD | Haaland | MCI | LIV(A) | 1.31 | 1.39 | 6.34 |
-| FWD | João Pedro | CHE | BOU(H) | 2.43 | 1.34 | 4.37 |
+| GKP | Kinsky | TOT | COV(H) | 1.19 | 0.50 | 4.00 |
+| DEF | Calafiori | ARS | NFO(A) | 1.26 | 0.80 | 4.58 |
+| DEF | Ajer | BRE | LIV(H) | 1.38 | 1.11 | 3.93 |
+| DEF | Virgil | LIV | BRE(A) | 1.11 | 1.38 | 3.30 |
+| DEF | Kayode | BRE | LIV(H) | 1.38 | 1.11 | 2.49 |
+| MID | Groß **(C)** | BHA | CRY(H) | 4.20 | 0.69 | 9.10 |
+| MID | Palmer | CHE | EVE(A) | 1.32 | 1.69 | 4.38 |
+| MID | Schade | BRE | LIV(H) | 1.38 | 1.11 | 4.07 |
+| MID | Cherki | MCI | IPS(H) | 3.59 | 0.80 | 3.26 |
+| FWD | Haaland | MCI | IPS(H) | 3.59 | 0.80 | 5.42 |
+| FWD | João Pedro | CHE | EVE(A) | 1.32 | 1.69 | 5.26 |
 
-**Bench:** Kayode (3.0), Wissa (2.4), Shaw (2.3), Kinsky (3.4)
+**Bench:** Shaw (1.9), Szoboszlai (1.8), Wissa (1.7), Lammens (2.8)
 
 ## Transfers (0 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Kayode | Bogle | LEE | £4.6m | +8.08 |
-| Kayode | Justin | LEE | £4.5m | +6.97 |
-| João Pedro | Kostoulas | BHA | £5.6m | +6.86 |
-| Shaw | Egan | HUL | £4.1m | +5.31 |
-| Shaw | Davis | IPS | £4.0m | +5.13 |
-| Shaw | Thomas | COV | £4.0m | +4.67 |
-| Shaw | F.Kadıoğlu | BHA | £4.4m | +4.29 |
-| Virgil | De Cuyper | BHA | £5.0m | +4.28 |
+| Virgil | De Cuyper | BHA | £5.0m | +13.27 |
+| Cherki | Rogers | CHE | £7.8m | +10.69 |
+| Szoboszlai | Gomez | BHA | £5.0m | +9.89 |
+| Cherki | Mbeumo | MUN | £7.9m | +9.45 |
+| Virgil | Vuskovic | BHA | £5.0m | +9.04 |
+| Virgil | Muharemović | LEE | £5.0m | +8.15 |
+| Wissa | Calvert-Lewin | LEE | £6.0m | +7.82 |
+| Szoboszlai | Neto | CHE | £6.5m | +7.63 |
 
 ## Risk in your squad
 
-No flags on any of your 15.
+- **Schade** (Brentford) - Shoulder injury - 75% chance of playing | 75% to play
 
 ## Your plan
 
