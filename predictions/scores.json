@@ -220,5 +220,116 @@
     "mins": 90
    }
   ]
+ },
+ "6": {
+  "gw": 6,
+  "n": 204,
+  "bias": -0.10099019607843139,
+  "mae": 2.1392549019607845,
+  "pred_mean": 3.1205980392156865,
+  "act_mean": 3.019607843137255,
+  "by_pos": {
+   "GKP": {
+    "n": 20,
+    "pred": 3.53725,
+    "act": 2.5
+   },
+   "DEF": {
+    "n": 75,
+    "pred": 3.1748266666666667,
+    "act": 2.52
+   },
+   "MID": {
+    "n": 89,
+    "pred": 2.9691573033707868,
+    "act": 3.348314606741573
+   },
+   "FWD": {
+    "n": 20,
+    "pred": 3.1745,
+    "act": 3.95
+   }
+  },
+  "starters": 121,
+  "short": 9,
+  "blanked": 2,
+  "xi_pred": 65.654,
+  "xi_act": 66,
+  "worst": [
+   {
+    "id": 94,
+    "name": "Schade",
+    "pos": "MID",
+    "xp": 7.621,
+    "xmins": 81.8,
+    "pts": 1,
+    "mins": 51
+   },
+   {
+    "id": 138,
+    "name": "Kostoulas",
+    "pos": "FWD",
+    "xp": 6.651,
+    "xmins": 73.8,
+    "pts": 1,
+    "mins": 59
+   },
+   {
+    "id": 356,
+    "name": "Virgil",
+    "pos": "DEF",
+    "xp": 5.464,
+    "xmins": 82.9,
+    "pts": 0,
+    "mins": 90
+   },
+   {
+    "id": 449,
+    "name": "Hall",
+    "pos": "DEF",
+    "xp": 5.364,
+    "xmins": 80.4,
+    "pts": 0,
+    "mins": 90
+   },
+   {
+    "id": 330,
+    "name": "Bogle",
+    "pos": "DEF",
+    "xp": 5.79,
+    "xmins": 76.8,
+    "pts": 1,
+    "mins": 85
+   }
+  ],
+  "best": [
+   {
+    "id": 236,
+    "name": "Dewsbury-Hall",
+    "pos": "MID",
+    "xp": 2.721,
+    "xmins": 81.5,
+    "pts": 13,
+    "mins": 90
+   },
+   {
+    "id": 115,
+    "name": "De Cuyper",
+    "pos": "DEF",
+    "xp": 6.382,
+    "xmins": 78.6,
+    "pts": 15,
+    "mins": 67
+   },
+   {
+    "id": 304,
+    "name": "O'Shea",
+    "pos": "DEF",
+    "xp": 2.511,
+    "xmins": 78.3,
+    "pts": 11,
+    "mins": 90
+   }
+  ]
  }
 }

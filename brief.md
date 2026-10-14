@@ -2,7 +2,7 @@
 
 Deadline **Sat 17 Oct 06:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW7-11
 
-## Recommended XI (4-4-2) - 55.2 projected, 64.2 with captain
+## Recommended XI (4-4-2) - 54.9 projected, 63.2 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
@@ -11,22 +11,22 @@ Deadline **Sat 17 Oct 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | DEF | Calafiori | ARS | NFO(A) | 1.39 | 0.80 | 4.48 |
 | DEF | Virgil | LIV | BRE(A) | 1.00 | 1.72 | 3.27 |
 | DEF | Kayode | BRE | LIV(H) | 1.72 | 1.00 | 2.97 |
-| MID | Groß **(C)** | BHA | CRY(H) | 4.02 | 0.78 | 8.98 |
-| MID | Cherki | MCI | IPS(H) | 3.80 | 0.72 | 6.87 |
+| MID | Cherki | MCI | IPS(H) | 3.80 | 0.72 | 8.08 |
+| MID | Groß | BHA | CRY(H) | 4.02 | 0.78 | 7.95 |
 | MID | Palmer | CHE | EVE(A) | 1.39 | 1.87 | 4.42 |
 | MID | Schade | BRE | LIV(H) | 1.72 | 1.00 | 3.14 |
-| FWD | Haaland | MCI | IPS(H) | 3.80 | 0.72 | 8.72 |
+| FWD | Haaland **(C)** | MCI | IPS(H) | 3.80 | 0.72 | 8.27 |
 | FWD | João Pedro | CHE | EVE(A) | 1.39 | 1.87 | 4.40 |
 
-**Bench:** Wissa (2.6), Shaw (1.4), Szoboszlai (1.1), Lammens (2.8)
+**Bench:** Wissa (2.6), Shaw (1.7), Szoboszlai (1.1), Lammens (3.0)
 
 ## Transfers (0 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Szoboszlai | Enzo | MCI | £6.9m | +14.77 |
-| Szoboszlai | Anderson | MCI | £6.3m | +13.39 |
-| Szoboszlai | Gomez | BHA | £5.0m | +13.27 |
+| Szoboszlai | Enzo | MCI | £6.9m | +15.22 |
+| Szoboszlai | Gomez | BHA | £5.0m | +13.81 |
+| Szoboszlai | Anderson | MCI | £6.3m | +13.25 |
 | Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +12.79 |
 | Szoboszlai | Neto | CHE | £6.5m | +11.06 |
 | Szoboszlai | Ødegaard | ARS | £6.8m | +10.61 |
