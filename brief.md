@@ -18,7 +18,7 @@ Deadline **Sat 17 Oct 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | FWD | Haaland **(C)** | MCI | IPS(H) | 3.80 | 0.72 | 8.27 |
 | FWD | João Pedro | CHE | EVE(A) | 1.39 | 1.87 | 4.40 |
 
-**Bench:** Wissa (2.6), Shaw (1.7), Szoboszlai (1.1), Lammens (3.0)
+**Bench:** Wissa (2.5), Shaw (1.7), Szoboszlai (1.1), Lammens (3.0)
 
 ## Transfers (0 free)
 
@@ -30,7 +30,7 @@ Deadline **Sat 17 Oct 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +12.79 |
 | Szoboszlai | Neto | CHE | £6.5m | +11.06 |
 | Szoboszlai | Ødegaard | ARS | £6.8m | +10.61 |
-| Szoboszlai | Stach | LEE | £6.0m | +10.12 |
+| Szoboszlai | Stach | LEE | £6.0m | +10.21 |
 | Szoboszlai | E.Le Fée | SUN | £5.7m | +9.96 |
 
 ## Risk in your squad
