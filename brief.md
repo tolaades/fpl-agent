@@ -18,25 +18,25 @@ Deadline **Sat 17 Oct 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | FWD | Haaland **(C)** | MCI | IPS(H) | 3.80 | 0.72 | 8.27 |
 | FWD | João Pedro | CHE | EVE(A) | 1.39 | 1.87 | 4.40 |
 
-**Bench:** Wissa (2.5), Shaw (1.7), Szoboszlai (1.1), Lammens (3.0)
+**Bench:** Wissa (2.5), Shaw (1.7), Szoboszlai (0.4), Lammens (3.0)
 
 ## Transfers (0 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Szoboszlai | Enzo | MCI | £6.9m | +15.22 |
-| Szoboszlai | Gomez | BHA | £5.0m | +13.81 |
-| Szoboszlai | Anderson | MCI | £6.3m | +13.25 |
-| Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +12.79 |
-| Szoboszlai | Neto | CHE | £6.5m | +11.06 |
-| Szoboszlai | Ødegaard | ARS | £6.8m | +10.61 |
-| Szoboszlai | Stach | LEE | £6.0m | +10.21 |
-| Szoboszlai | E.Le Fée | SUN | £5.7m | +9.96 |
+| Szoboszlai | Enzo | MCI | £6.9m | +20.12 |
+| Szoboszlai | Gomez | BHA | £5.0m | +18.70 |
+| Szoboszlai | Anderson | MCI | £6.3m | +18.15 |
+| Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +17.69 |
+| Szoboszlai | Neto | CHE | £6.5m | +15.95 |
+| Szoboszlai | Ødegaard | ARS | £6.8m | +15.51 |
+| Szoboszlai | Stach | LEE | £6.0m | +15.11 |
+| Szoboszlai | E.Le Fée | SUN | £5.7m | +14.85 |
 
 ## Risk in your squad
 
 - **Shaw** (Man Utd) - Unspecified injury - 75% chance of playing | 75% to play
-- **Szoboszlai** (Liverpool) - Hamstring injury - 75% chance of playing | 75% to play
+- **Szoboszlai** (Liverpool) - Hamstring injury - 25% chance of playing | 25% to play
 - **Schade** (Brentford) - Shoulder injury - 75% chance of playing | 75% to play
 
 ## Your plan
