@@ -1,43 +1,42 @@
-# Gameweek 7 brief
+# Gameweek 8 brief
 
-Deadline **Sat 17 Oct 06:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW7-11
+Deadline **Fri 23 Oct 13:30 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW8-12
 
-## Recommended XI (4-4-2) - 54.9 projected, 63.2 with captain
+## Recommended XI (4-4-2) - 44.5 projected, 52.4 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
-| GKP | Kinsky | TOT | COV(H) | 1.14 | 0.78 | 3.02 |
-| DEF | Ajer | BRE | LIV(H) | 1.72 | 1.00 | 4.89 |
-| DEF | Calafiori | ARS | NFO(A) | 1.39 | 0.80 | 4.48 |
-| DEF | Virgil | LIV | BRE(A) | 1.00 | 1.72 | 3.27 |
-| DEF | Kayode | BRE | LIV(H) | 1.72 | 1.00 | 2.97 |
-| MID | Cherki | MCI | IPS(H) | 3.80 | 0.72 | 8.08 |
-| MID | Groß | BHA | CRY(H) | 4.02 | 0.78 | 7.95 |
-| MID | Palmer | CHE | EVE(A) | 1.39 | 1.87 | 4.42 |
-| MID | Schade | BRE | LIV(H) | 1.72 | 1.00 | 3.14 |
-| FWD | Haaland **(C)** | MCI | IPS(H) | 3.80 | 0.72 | 8.27 |
-| FWD | João Pedro | CHE | EVE(A) | 1.39 | 1.87 | 4.40 |
+| GKP | Lammens | MUN | BOU(H) | 2.35 | 1.00 | 2.06 |
+| DEF | Ajer | BRE | HUL(A) | 1.27 | 1.11 | 4.25 |
+| DEF | Virgil | LIV | BHA(H) | 1.27 | 1.74 | 3.38 |
+| DEF | Calafiori | ARS | EVE(H) | 1.73 | 0.62 | 3.09 |
+| DEF | Kayode | BRE | HUL(A) | 1.27 | 1.11 | 2.59 |
+| MID | Palmer | CHE | TOT(H) | 2.85 | 0.67 | 4.95 |
+| MID | Cherki | MCI | AVL(A) | 2.23 | 1.00 | 4.27 |
+| MID | Groß | BHA | LIV(A) | 1.74 | 1.27 | 4.22 |
+| MID | Schade | BRE | HUL(A) | 1.27 | 1.11 | 2.80 |
+| FWD | Haaland **(C)** | MCI | AVL(A) | 2.23 | 1.00 | 7.92 |
+| FWD | João Pedro | CHE | TOT(H) | 2.85 | 0.67 | 4.99 |
 
-**Bench:** Wissa (2.5), Shaw (1.7), Szoboszlai (0.4), Lammens (3.0)
+**Bench:** Wissa (2.2), Shaw (1.3), Szoboszlai (0.0), Kinsky (1.7)
 
 ## Transfers (0 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Szoboszlai | Enzo | MCI | £6.9m | +20.12 |
-| Szoboszlai | Gomez | BHA | £5.0m | +18.70 |
-| Szoboszlai | Anderson | MCI | £6.3m | +18.15 |
-| Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +17.69 |
-| Szoboszlai | Neto | CHE | £6.5m | +15.95 |
-| Szoboszlai | Ødegaard | ARS | £6.8m | +15.51 |
-| Szoboszlai | Stach | LEE | £6.0m | +15.11 |
-| Szoboszlai | E.Le Fée | SUN | £5.7m | +14.85 |
+| Szoboszlai | Neto | CHE | £6.5m | +22.22 |
+| Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +18.39 |
+| Szoboszlai | Ndiaye | MCI | £5.8m | +17.87 |
+| Szoboszlai | Enzo | MCI | £6.9m | +16.63 |
+| Szoboszlai | Iwobi | FUL | £5.4m | +16.36 |
+| Szoboszlai | Buendía | AVL | £5.9m | +16.05 |
+| Szoboszlai | Foden | MCI | £6.8m | +15.46 |
+| Szoboszlai | Barnes | NEW | £6.1m | +15.36 |
 
 ## Risk in your squad
 
 - **Shaw** (Man Utd) - Unspecified injury - 75% chance of playing | 75% to play
-- **Szoboszlai** (Liverpool) - Hamstring injury - 25% chance of playing | 25% to play
-- **Schade** (Brentford) - Shoulder injury - 75% chance of playing | 75% to play
+- **Szoboszlai** (Liverpool) - Hamstring injury - Unknown return date | 0% to play
 
 ## Your plan
 
