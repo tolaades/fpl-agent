@@ -331,5 +331,116 @@
     "mins": 90
    }
   ]
+ },
+ "7": {
+  "gw": 7,
+  "n": 213,
+  "bias": 0.18683098591549296,
+  "mae": 2.50431455399061,
+  "pred_mean": 3.0479107981220657,
+  "act_mean": 3.2347417840375585,
+  "by_pos": {
+   "GKP": {
+    "n": 20,
+    "pred": 3.2491499999999998,
+    "act": 3.5
+   },
+   "DEF": {
+    "n": 84,
+    "pred": 2.84575,
+    "act": 3.2976190476190474
+   },
+   "MID": {
+    "n": 89,
+    "pred": 3.0993483146067415,
+    "act": 2.853932584269663
+   },
+   "FWD": {
+    "n": 20,
+    "pred": 3.46685,
+    "act": 4.4
+   }
+  },
+  "starters": 128,
+  "short": 9,
+  "blanked": 3,
+  "xi_pred": 63.172,
+  "xi_act": 51,
+  "worst": [
+   {
+    "id": 399,
+    "name": "Cherki",
+    "pos": "MID",
+    "xp": 8.082,
+    "xmins": 71.9,
+    "pts": 0,
+    "mins": 0
+   },
+   {
+    "id": 397,
+    "name": "Semenyo",
+    "pos": "MID",
+    "xp": 7.708,
+    "xmins": 82.7,
+    "pts": 1,
+    "mins": 13
+   },
+   {
+    "id": 176,
+    "name": "Dasilva",
+    "pos": "DEF",
+    "xp": 6.022,
+    "xmins": 79.8,
+    "pts": 0,
+    "mins": 90
+   },
+   {
+    "id": 229,
+    "name": "Tarkowski",
+    "pos": "DEF",
+    "xp": 5.928,
+    "xmins": 82.7,
+    "pts": 0,
+    "mins": 90
+   },
+   {
+    "id": 203,
+    "name": "Canvot",
+    "pos": "DEF",
+    "xp": 3.376,
+    "xmins": 67.0,
+    "pts": -2,
+    "mins": 90
+   }
+  ],
+  "best": [
+   {
+    "id": 156,
+    "name": "Neto",
+    "pos": "MID",
+    "xp": 3.211,
+    "xmins": 78.3,
+    "pts": 15,
+    "mins": 90
+   },
+   {
+    "id": 148,
+    "name": "Hato",
+    "pos": "DEF",
+    "xp": 1.266,
+    "xmins": 51.5,
+    "pts": 11,
+    "mins": 90
+   },
+   {
+    "id": 129,
+    "name": "Ayari",
+    "pos": "MID",
+    "xp": 3.631,
+    "xmins": 76.4,
+    "pts": 13,
+    "mins": 80
+   }
+  ]
  }
 }
