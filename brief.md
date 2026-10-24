@@ -1,37 +1,37 @@
-# Gameweek 8 brief
+# Gameweek 9 brief
 
-Deadline **Fri 23 Oct 13:30 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW8-12
+Deadline **Sat 31 Oct 07:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW9-13
 
-## Recommended XI (4-3-3) - 47.7 projected, 56.2 with captain
+## Recommended XI (4-3-3) - 28.9 projected, 33.7 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
-| GKP | Lammens | MUN | BOU(H) | 2.09 | 1.00 | 2.97 |
-| DEF | Calafiori | ARS | EVE(H) | 1.69 | 0.56 | 6.05 |
-| DEF | Ajer | BRE | HUL(A) | 1.27 | 1.11 | 3.89 |
-| DEF | Virgil | LIV | BHA(H) | 1.16 | 1.86 | 2.42 |
-| DEF | Kayode | BRE | HUL(A) | 1.27 | 1.11 | 1.78 |
-| MID | Palmer | CHE | TOT(H) | 2.77 | 0.83 | 5.31 |
-| MID | Groß | BHA | LIV(A) | 1.86 | 1.16 | 4.57 |
-| MID | Cherki | MCI | AVL(A) | 2.23 | 1.00 | 3.82 |
-| FWD | Haaland **(C)** | MCI | AVL(A) | 2.23 | 1.00 | 8.44 |
-| FWD | João Pedro | CHE | TOT(H) | 2.77 | 0.83 | 5.98 |
-| FWD | Wissa | NEW | CRY(A) | 1.75 | 1.76 | 2.51 |
+| GKP | Lammens | MUN | CHE(A) | 1.43 | 2.29 | 1.80 |
+| DEF | Calafiori | ARS | LIV(A) | 1.17 | 1.01 | 3.48 |
+| DEF | Ajer | BRE | NFO(H) | 1.75 | 0.77 | 2.54 |
+| DEF | Virgil | LIV | ARS(H) | 1.01 | 1.17 | 1.56 |
+| DEF | Kayode | BRE | NFO(H) | 1.75 | 0.77 | 1.40 |
+| MID | Palmer | CHE | MUN(H) | 2.29 | 1.43 | 3.04 |
+| MID | Groß | BHA | MCI(A) | 1.67 | 1.83 | 2.77 |
+| MID | Cherki | MCI | BHA(H) | 1.83 | 1.67 | 2.43 |
+| FWD | Haaland **(C)** | MCI | BHA(H) | 1.83 | 1.67 | 4.79 |
+| FWD | João Pedro | CHE | MUN(H) | 2.29 | 1.43 | 3.61 |
+| FWD | Wissa | NEW | EVE(H) | 1.38 | 1.26 | 1.49 |
 
-**Bench:** Schade (1.5), Shaw (0.0), Szoboszlai (0.0), Kinsky (2.5)
+**Bench:** Schade (1.2), Shaw (0.0), Szoboszlai (0.0), Kinsky (1.8)
 
 ## Transfers (0 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Szoboszlai | Neto | CHE | £6.5m | +23.34 |
-| Szoboszlai | Gomez | BHA | £5.0m | +22.52 |
-| Szoboszlai | Tavernier | BOU | £6.2m | +20.21 |
-| Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +19.07 |
-| Szoboszlai | Ayari | BHA | £5.4m | +18.96 |
-| Shaw | F.Kadıoğlu | BHA | £4.4m | +18.66 |
-| Szoboszlai | Ødegaard | ARS | £6.8m | +17.65 |
-| Szoboszlai | Stach | LEE | £6.0m | +17.01 |
+| Szoboszlai | Enciso | IPS | £5.5m | +16.45 |
+| Shaw | O'Shea | IPS | £4.0m | +16.35 |
+| Szoboszlai | Neto | CHE | £6.6m | +14.75 |
+| Szoboszlai | Gomez | BHA | £5.0m | +14.17 |
+| Shaw | Davis | IPS | £4.0m | +13.81 |
+| Szoboszlai | McAtee | NFO | £5.5m | +13.77 |
+| Szoboszlai | Ndoye | NFO | £5.5m | +13.40 |
+| Shaw | Diop | IPS | £3.9m | +12.88 |
 
 ## Risk in your squad
 
