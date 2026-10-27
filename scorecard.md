@@ -1,6 +1,6 @@
 # Model scorecard
 
-_Updated 26 Oct 2026_
+_Updated 27 Oct 2026_
 
 ## Summary
 
@@ -10,10 +10,11 @@ _Updated 26 Oct 2026_
 | 5 | 214 | 3.04 | 3.55 | +0.50 | 2.49 | 61.6 | 65 |
 | 6 | 204 | 3.12 | 3.02 | -0.10 | 2.14 | 65.7 | 66 |
 | 7 | 213 | 3.05 | 3.23 | +0.19 | 2.50 | 63.2 | 51 |
+| 8 | 201 | 2.95 | 3.36 | +0.41 | 2.61 | 56.2 | 33 |
 
 ## Calibration
 
-Mean bias across 4 gameweeks: **+0.21 points per player**.
+Mean bias across 5 gameweeks: **+0.25 points per player**.
 Within noise. No adjustment justified.
 
 ## Minutes
@@ -24,24 +25,25 @@ Within noise. No adjustment justified.
 | 5 | 131 | 11 | 7 |
 | 6 | 121 | 9 | 2 |
 | 7 | 128 | 9 | 3 |
+| 8 | 124 | 22 | 7 |
 
 Early substitutions are expensive: 1 appearance point instead of 2, no clean sheet, and usually no defensive contribution. If this column stays high the minutes model is the problem, not the attacking projections.
 
-## Biggest misses, GW7
+## Biggest misses, GW8
 
 | Player | Predicted | Actual | Error |
 |---|---|---|---|
-| Cherki | 8.08 | 0 | -8.08 |
-| Semenyo | 7.71 | 1 | -6.71 |
-| Dasilva | 6.02 | 0 | -6.02 |
-| Tarkowski | 5.93 | 0 | -5.93 |
-| Canvot | 3.38 | -2 | -5.38 |
+| Palmer | 5.31 | -1 | -6.31 |
+| De Cuyper | 7.05 | 1 | -6.05 |
+| João Pedro | 5.98 | 0 | -5.98 |
+| Boscagli | 4.84 | -1 | -5.84 |
+| Vuskovic | 6.43 | 1 | -5.43 |
 
 **By position, latest gameweek**
 
 | Pos | n | Predicted avg | Actual avg |
 |---|---|---|---|
-| GKP | 20 | 3.25 | 3.50 |
-| DEF | 84 | 2.85 | 3.30 |
-| MID | 89 | 3.10 | 2.85 |
-| FWD | 20 | 3.47 | 4.40 |
+| GKP | 19 | 2.96 | 4.53 |
+| DEF | 78 | 2.83 | 3.68 |
+| MID | 82 | 2.90 | 2.82 |
+| FWD | 22 | 3.52 | 3.23 |

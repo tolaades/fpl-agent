@@ -24,11 +24,11 @@ Deadline **Sat 31 Oct 07:00 America/New_York** | bank £0.1m | 0 free transfer(s
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Szoboszlai | Tavernier | BOU | £6.3m | +23.18 |
+| Szoboszlai | Tavernier | BOU | £6.4m | +23.18 |
 | Szoboszlai | Neto | CHE | £6.6m | +21.73 |
 | Szoboszlai | Gomez | BHA | £5.0m | +21.22 |
 | Szoboszlai | Ayari | BHA | £5.4m | +17.93 |
-| Szoboszlai | Ødegaard | ARS | £6.8m | +17.58 |
+| Szoboszlai | Ødegaard | ARS | £6.7m | +17.58 |
 | Szoboszlai | Ndiaye | MCI | £5.8m | +17.57 |
 | Szoboszlai | Rayan | BOU | £6.3m | +17.10 |
 | Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +17.05 |
