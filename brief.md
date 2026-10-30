@@ -28,7 +28,7 @@ Deadline **Sat 31 Oct 07:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | Szoboszlai | Neto | CHE | £6.6m | +21.73 |
 | Szoboszlai | Gomez | BHA | £5.0m | +21.22 |
 | João Pedro | Kostoulas | BHA | £5.8m | +19.69 |
-| João Pedro | Evanilson | BOU | £6.2m | +18.64 |
+| João Pedro | Evanilson | BOU | £6.3m | +18.64 |
 | Szoboszlai | Ayari | BHA | £5.4m | +17.93 |
 | Szoboszlai | Ødegaard | ARS | £6.7m | +17.58 |
 | Szoboszlai | Ndiaye | MCI | £5.8m | +17.57 |
