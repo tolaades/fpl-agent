@@ -18,26 +18,26 @@ Deadline **Sat 31 Oct 07:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | FWD | Haaland **(C)** | MCI | BHA(H) | 1.87 | 1.60 | 7.77 |
 | FWD | Wissa | NEW | EVE(H) | 1.51 | 1.06 | 1.74 |
 
-**Bench:** Shaw (0.0), Szoboszlai (0.0), João Pedro (0.0), Lammens (2.5)
+**Bench:** Szoboszlai (0.4), Shaw (0.0), João Pedro (0.0), Lammens (2.5)
 
 ## Transfers (0 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| Szoboszlai | Tavernier | BOU | £6.4m | +23.18 |
-| Szoboszlai | Neto | CHE | £6.6m | +21.73 |
-| Szoboszlai | Gomez | BHA | £5.0m | +21.22 |
 | João Pedro | Kostoulas | BHA | £5.8m | +19.69 |
+| Szoboszlai | Tavernier | BOU | £6.5m | +19.58 |
 | João Pedro | Evanilson | BOU | £6.3m | +18.64 |
-| Szoboszlai | Ayari | BHA | £5.4m | +17.93 |
-| Szoboszlai | Ødegaard | ARS | £6.7m | +17.58 |
-| Szoboszlai | Ndiaye | MCI | £5.8m | +17.57 |
+| Szoboszlai | Neto | CHE | £6.6m | +18.13 |
+| Szoboszlai | Gomez | BHA | £5.0m | +17.63 |
+| Shaw | Egan | HUL | £4.1m | +16.10 |
+| João Pedro | N.Jackson | AVL | £6.9m | +15.98 |
+| João Pedro | Barry | EVE | £5.6m | +15.86 |
 
 ## Risk in your squad
 
 - **Calafiori** (Arsenal) - Hip injury - 75% chance of playing | 75% to play
 - **Shaw** (Man Utd) - Unspecified injury - Unknown return date | 0% to play
-- **Szoboszlai** (Liverpool) - Hamstring injury - Unknown return date | 0% to play
+- **Szoboszlai** (Liverpool) - Hamstring injury - 50% chance of playing | 50% to play
 - **João Pedro** (Chelsea) - Thigh injury - Unknown return date | 0% to play
 
 ## Your plan
