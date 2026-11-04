@@ -553,5 +553,116 @@
     "mins": 81
    }
   ]
+ },
+ "9": {
+  "gw": 9,
+  "n": 203,
+  "bias": 0.15651231527093595,
+  "mae": 1.9934975369458128,
+  "pred_mean": 2.843487684729064,
+  "act_mean": 3,
+  "by_pos": {
+   "GKP": {
+    "n": 20,
+    "pred": 3.12645,
+    "act": 3.45
+   },
+   "DEF": {
+    "n": 80,
+    "pred": 2.757925,
+    "act": 2.975
+   },
+   "MID": {
+    "n": 82,
+    "pred": 2.761731707317073,
+    "act": 2.7195121951219514
+   },
+   "FWD": {
+    "n": 21,
+    "pred": 3.219190476190476,
+    "act": 3.761904761904762
+   }
+  },
+  "starters": 112,
+  "short": 7,
+  "blanked": 2,
+  "xi_pred": 47.251999999999995,
+  "xi_act": 45,
+  "worst": [
+   {
+    "id": 411,
+    "name": "Haaland",
+    "pos": "FWD",
+    "xp": 7.773,
+    "xmins": 81.9,
+    "pts": 2,
+    "mins": 90
+   },
+   {
+    "id": 10,
+    "name": "White",
+    "pos": "DEF",
+    "xp": 4.708,
+    "xmins": 69.3,
+    "pts": 0,
+    "mins": 0
+   },
+   {
+    "id": 101,
+    "name": "Henderson",
+    "pos": "MID",
+    "xp": 4.466,
+    "xmins": 46.4,
+    "pts": 0,
+    "mins": 0
+   },
+   {
+    "id": 45,
+    "name": "McGinn",
+    "pos": "MID",
+    "xp": 4.034,
+    "xmins": 68.2,
+    "pts": 0,
+    "mins": 86
+   },
+   {
+    "id": 427,
+    "name": "Mbeumo",
+    "pos": "MID",
+    "xp": 4.896,
+    "xmins": 81.7,
+    "pts": 1,
+    "mins": 90
+   }
+  ],
+  "best": [
+   {
+    "id": 112,
+    "name": "Van Hecke",
+    "pos": "DEF",
+    "xp": 4.416,
+    "xmins": 82.5,
+    "pts": 15,
+    "mins": 90
+   },
+   {
+    "id": 295,
+    "name": "McBurnie",
+    "pos": "FWD",
+    "xp": 3.15,
+    "xmins": 79.2,
+    "pts": 12,
+    "mins": 90
+   },
+   {
+    "id": 230,
+    "name": "Branthwaite",
+    "pos": "DEF",
+    "xp": 1.323,
+    "xmins": 54.0,
+    "pts": 9,
+    "mins": 81
+   }
+  ]
  }
 }
