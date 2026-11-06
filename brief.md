@@ -29,9 +29,9 @@ Deadline **Fri 06 Nov 13:30 America/New_York** | bank £0.1m | 0 free transfer(s
 | João Pedro | N.Jackson | AVL | £7.0m | +17.80 |
 | João Pedro | Barry | EVE | £5.6m | +16.82 |
 | Szoboszlai | Tavernier | BOU | £6.6m | +15.89 |
-| João Pedro | Calvert-Lewin | LEE | £6.1m | +15.50 |
 | Shaw | O'Shea | IPS | £4.0m | +14.66 |
 | Shaw | Robertson | TOT | £4.3m | +14.65 |
+| Szoboszlai | Neto | CHE | £6.6m | +13.92 |
 
 ## Risk in your squad
 
