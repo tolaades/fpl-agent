@@ -2,21 +2,21 @@
 
 Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW11-15
 
-## Recommended XI (4-4-2) - 28.9 projected, 33.8 with captain
+## Recommended XI (4-4-2) - 35.3 projected, 42.1 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
-| GKP | Kinsky | TOT | IPS(H) | 1.75 | 1.08 | 2.82 |
-| DEF | Calafiori | ARS | NEW(A) | 1.57 | 0.75 | 3.23 |
+| GKP | Kinsky | TOT | IPS(H) | 1.63 | 1.05 | 3.65 |
+| DEF | Calafiori | ARS | NEW(A) | 1.46 | 0.69 | 4.60 |
 | DEF | Ajer | BRE | EVE(H) | 1.60 | 0.76 | 2.89 |
 | DEF | Virgil | LIV | MUN(H) | 1.90 | 0.75 | 2.60 |
 | DEF | Kayode | BRE | EVE(H) | 1.60 | 0.76 | 2.19 |
-| MID | Palmer | CHE | LEE(H) | 1.71 | 0.96 | 2.96 |
-| MID | Groß | BHA | HUL(A) | 1.94 | 0.76 | 2.42 |
-| MID | Cherki | MCI | FUL(H) | 2.51 | 0.66 | 2.07 |
+| MID | Cherki | MCI | FUL(H) | 2.40 | 0.71 | 3.96 |
+| MID | Palmer | CHE | LEE(H) | 1.59 | 0.95 | 2.91 |
+| MID | Groß | BHA | HUL(A) | 1.89 | 0.71 | 2.41 |
 | MID | Schade | BRE | EVE(H) | 1.60 | 0.76 | 1.77 |
-| FWD | Haaland **(C)** | MCI | FUL(H) | 2.51 | 0.66 | 4.96 |
-| FWD | Wissa | NEW | ARS(H) | 0.75 | 1.57 | 0.97 |
+| FWD | Haaland **(C)** | MCI | FUL(H) | 2.40 | 0.71 | 6.79 |
+| FWD | Wissa | NEW | ARS(H) | 0.69 | 1.46 | 1.52 |
 
 **Bench:** Szoboszlai (0.9), Shaw (0.0), João Pedro (0.0), Lammens (1.8)
 
@@ -24,14 +24,14 @@ Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| João Pedro | Barry | EVE | £5.7m | +17.80 |
-| Szoboszlai | Dewsbury-Hall | EVE | £6.6m | +12.28 |
-| João Pedro | Evanilson | BOU | £6.5m | +12.19 |
-| Shaw | Coyle | HUL | £4.0m | +12.16 |
-| Shaw | Diop | IPS | £3.9m | +12.14 |
-| João Pedro | Kostoulas | BHA | £5.8m | +11.81 |
-| João Pedro | Awoniyi | COV | £5.4m | +11.65 |
-| Shaw | Dasilva | COV | £4.0m | +11.53 |
+| João Pedro | Barry | EVE | £5.7m | +17.77 |
+| Shaw | Robertson | TOT | £4.3m | +15.17 |
+| João Pedro | Calvert-Lewin | LEE | £6.0m | +15.06 |
+| Shaw | Ajayi | HUL | £4.2m | +14.57 |
+| Shaw | Egan | HUL | £4.1m | +14.04 |
+| Szoboszlai | Ødegaard | ARS | £6.7m | +13.29 |
+| João Pedro | Havertz | ARS | £7.4m | +13.25 |
+| João Pedro | Delap | NFO | £5.3m | +12.84 |
 
 ## Risk in your squad
 
