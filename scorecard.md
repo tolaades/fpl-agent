@@ -1,6 +1,6 @@
 # Model scorecard
 
-_Updated 09 Nov 2026_
+_Updated 10 Nov 2026_
 
 ## Summary
 
@@ -12,10 +12,11 @@ _Updated 09 Nov 2026_
 | 7 | 213 | 3.05 | 3.23 | +0.19 | 2.50 | 63.2 | 51 |
 | 8 | 201 | 2.95 | 3.36 | +0.41 | 2.61 | 56.2 | 33 |
 | 9 | 203 | 2.84 | 3.00 | +0.16 | 1.99 | 47.3 | 45 |
+| 10 | 200 | 2.91 | 3.19 | +0.29 | 2.17 | 45.6 | 43 |
 
 ## Calibration
 
-Mean bias across 6 gameweeks: **+0.23 points per player**.
+Mean bias across 7 gameweeks: **+0.24 points per player**.
 Within noise. No adjustment justified.
 
 ## Minutes
@@ -28,24 +29,25 @@ Within noise. No adjustment justified.
 | 7 | 128 | 9 | 3 |
 | 8 | 124 | 22 | 7 |
 | 9 | 112 | 7 | 2 |
+| 10 | 115 | 10 | 2 |
 
 Early substitutions are expensive: 1 appearance point instead of 2, no clean sheet, and usually no defensive contribution. If this column stays high the minutes model is the problem, not the attacking projections.
 
-## Biggest misses, GW9
+## Biggest misses, GW10
 
 | Player | Predicted | Actual | Error |
 |---|---|---|---|
-| Haaland | 7.77 | 2 | -5.77 |
-| White | 4.71 | 0 | -4.71 |
-| Henderson | 4.47 | 0 | -4.47 |
-| McGinn | 4.03 | 0 | -4.03 |
-| Mbeumo | 4.90 | 1 | -3.90 |
+| Thiago | 3.98 | -2 | -5.97 |
+| Haaland | 6.70 | 2 | -4.70 |
+| Neto | 5.03 | 1 | -4.03 |
+| Colwill | 3.45 | 0 | -3.45 |
+| Suzuki | 3.36 | 0 | -3.36 |
 
 **By position, latest gameweek**
 
 | Pos | n | Predicted avg | Actual avg |
 |---|---|---|---|
-| GKP | 20 | 3.13 | 3.45 |
-| DEF | 80 | 2.76 | 2.98 |
-| MID | 82 | 2.76 | 2.72 |
-| FWD | 21 | 3.22 | 3.76 |
+| GKP | 21 | 3.08 | 3.24 |
+| DEF | 77 | 2.81 | 3.12 |
+| MID | 83 | 2.84 | 3.02 |
+| FWD | 19 | 3.39 | 4.21 |
