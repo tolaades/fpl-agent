@@ -2,7 +2,7 @@
 
 Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW11-15
 
-## Recommended XI (4-5-1) - 41.6 projected, 48.4 with captain
+## Recommended XI (4-5-1) - 41.4 projected, 48.2 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
@@ -10,12 +10,12 @@ Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | DEF | Calafiori | ARS | NEW(A) | 1.46 | 0.69 | 4.24 |
 | DEF | Ajer | BRE | EVE(H) | 1.49 | 0.79 | 3.93 |
 | DEF | Kayode | BRE | EVE(H) | 1.49 | 0.79 | 3.30 |
-| DEF | Virgil | LIV | MUN(H) | 2.39 | 0.84 | 2.89 |
+| DEF | Virgil | LIV | MUN(H) | 2.39 | 0.84 | 3.21 |
 | MID | Groß | BHA | HUL(A) | 1.85 | 0.65 | 4.19 |
-| MID | Cherki | MCI | FUL(H) | 2.40 | 0.71 | 3.96 |
 | MID | Palmer | CHE | LEE(H) | 1.48 | 0.91 | 3.47 |
+| MID | Cherki | MCI | FUL(H) | 2.40 | 0.71 | 3.28 |
+| MID | Szoboszlai | LIV | MUN(H) | 2.39 | 0.84 | 2.59 |
 | MID | Schade | BRE | EVE(H) | 1.49 | 0.79 | 2.57 |
-| MID | Szoboszlai | LIV | MUN(H) | 2.39 | 0.84 | 2.41 |
 | FWD | Haaland **(C)** | MCI | FUL(H) | 2.40 | 0.71 | 6.79 |
 
 **Bench:** Wissa (1.5), Shaw (0.0), João Pedro (0.0), Lammens (2.5)
@@ -27,11 +27,11 @@ Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | João Pedro | N.Jackson | AVL | £7.1m | +21.44 |
 | João Pedro | Evanilson | BOU | £6.5m | +20.03 |
 | João Pedro | Kostoulas | BHA | £5.8m | +18.36 |
-| João Pedro | Barry | EVE | £5.7m | +17.84 |
+| João Pedro | Barry | EVE | £5.7m | +17.93 |
 | Shaw | Robertson | TOT | £4.3m | +15.63 |
 | João Pedro | Calvert-Lewin | LEE | £6.0m | +15.23 |
-| Shaw | Ajayi | HUL | £4.2m | +14.55 |
-| Shaw | Egan | HUL | £4.1m | +14.02 |
+| Shaw | Ajayi | HUL | £4.2m | +14.78 |
+| Shaw | Egan | HUL | £4.1m | +14.20 |
 
 ## Risk in your squad
 
