@@ -18,7 +18,7 @@ Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | MID | Schade | BRE | EVE(H) | 1.49 | 0.79 | 2.57 |
 | FWD | Haaland **(C)** | MCI | FUL(H) | 2.40 | 0.71 | 6.79 |
 
-**Bench:** Wissa (1.5), Shaw (0.0), João Pedro (0.0), Lammens (2.5)
+**Bench:** Wissa (1.4), Shaw (0.0), João Pedro (0.0), Lammens (2.5)
 
 ## Transfers (0 free)
 
