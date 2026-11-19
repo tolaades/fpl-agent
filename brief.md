@@ -2,11 +2,11 @@
 
 Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW11-15
 
-## Recommended XI (4-5-1) - 41.4 projected, 47.2 with captain
+## Recommended XI (4-5-1) - 41.8 projected, 47.6 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
-| GKP | Kinsky | TOT | IPS(H) | 1.65 | 1.02 | 3.85 |
+| GKP | Kinsky | TOT | IPS(H) | 1.65 | 1.02 | 4.25 |
 | DEF | Ajer | BRE | EVE(H) | 1.49 | 0.79 | 4.02 |
 | DEF | Calafiori | ARS | NEW(A) | 1.46 | 0.69 | 4.01 |
 | DEF | Kayode | BRE | EVE(H) | 1.49 | 0.79 | 3.52 |
@@ -28,7 +28,7 @@ Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 | João Pedro | Evanilson | BOU | £6.5m | +19.58 |
 | João Pedro | Barry | EVE | £5.7m | +18.74 |
 | João Pedro | Kostoulas | BHA | £5.8m | +17.23 |
-| Shaw | Robertson | TOT | £4.3m | +15.63 |
+| Shaw | Robertson | TOT | £4.3m | +15.67 |
 | Shaw | Ajayi | HUL | £4.2m | +15.00 |
 | João Pedro | Calvert-Lewin | LEE | £6.0m | +14.42 |
 | Shaw | Egan | HUL | £4.1m | +13.98 |
