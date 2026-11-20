@@ -24,7 +24,7 @@ Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| João Pedro | N.Jackson | AVL | £7.1m | +22.43 |
+| João Pedro | N.Jackson | AVL | £7.2m | +22.43 |
 | João Pedro | Evanilson | BOU | £6.5m | +19.58 |
 | João Pedro | Barry | EVE | £5.7m | +18.74 |
 | João Pedro | Kostoulas | BHA | £5.8m | +17.23 |
