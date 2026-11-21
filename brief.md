@@ -2,15 +2,15 @@
 
 Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW11-15
 
-## Recommended XI (4-5-1) - 41.8 projected, 47.6 with captain
+## Recommended XI (4-5-1) - 43.1 projected, 48.9 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
 | GKP | Kinsky | TOT | IPS(H) | 1.65 | 1.02 | 4.25 |
+| DEF | Virgil | LIV | MUN(H) | 2.39 | 0.84 | 4.55 |
 | DEF | Ajer | BRE | EVE(H) | 1.49 | 0.79 | 4.02 |
 | DEF | Calafiori | ARS | NEW(A) | 1.46 | 0.69 | 4.01 |
 | DEF | Kayode | BRE | EVE(H) | 1.49 | 0.79 | 3.52 |
-| DEF | Virgil | LIV | MUN(H) | 2.39 | 0.84 | 3.25 |
 | MID | Groß | BHA | HUL(A) | 1.85 | 0.65 | 4.10 |
 | MID | Cherki | MCI | FUL(H) | 2.40 | 0.71 | 3.64 |
 | MID | Palmer | CHE | LEE(H) | 1.48 | 0.91 | 3.56 |
@@ -35,7 +35,6 @@ Deadline **Sat 21 Nov 06:00 America/New_York** | bank £0.1m | 0 free transfer(s
 
 ## Risk in your squad
 
-- **Virgil** (Liverpool) - Unspecified injury - 75% chance of playing | 75% to play
 - **Shaw** (Man Utd) - Unspecified injury - Unknown return date | 0% to play
 - **João Pedro** (Chelsea) - Thigh injury - Unknown return date | 0% to play
 
