@@ -1,6 +1,6 @@
 # Model scorecard
 
-_Updated 22 Nov 2026_
+_Updated 23 Nov 2026_
 
 ## Summary
 
