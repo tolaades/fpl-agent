@@ -775,5 +775,116 @@
     "mins": 90
    }
   ]
+ },
+ "11": {
+  "gw": 11,
+  "n": 206,
+  "bias": 0.21358252427184468,
+  "mae": 2.368009708737864,
+  "pred_mean": 2.9563203883495146,
+  "act_mean": 3.1699029126213594,
+  "by_pos": {
+   "GKP": {
+    "n": 20,
+    "pred": 3.41715,
+    "act": 3.75
+   },
+   "DEF": {
+    "n": 77,
+    "pred": 2.961792207792208,
+    "act": 2.6233766233766236
+   },
+   "MID": {
+    "n": 91,
+    "pred": 2.737054945054945,
+    "act": 3.3956043956043955
+   },
+   "FWD": {
+    "n": 18,
+    "pred": 3.5293888888888887,
+    "act": 3.7222222222222223
+   }
+  },
+  "starters": 113,
+  "short": 18,
+  "blanked": 7,
+  "xi_pred": 48.876999999999995,
+  "xi_act": 47,
+  "worst": [
+   {
+    "id": 229,
+    "name": "Tarkowski",
+    "pos": "DEF",
+    "xp": 3.08,
+    "xmins": 82.7,
+    "pts": -4,
+    "mins": 39
+   },
+   {
+    "id": 4,
+    "name": "Gabriel",
+    "pos": "DEF",
+    "xp": 7.274,
+    "xmins": 81.5,
+    "pts": 1,
+    "mins": 90
+   },
+   {
+    "id": 31,
+    "name": "Konsa",
+    "pos": "DEF",
+    "xp": 7.075,
+    "xmins": 81.9,
+    "pts": 1,
+    "mins": 90
+   },
+   {
+    "id": 504,
+    "name": "Vuskovic",
+    "pos": "DEF",
+    "xp": 5.43,
+    "xmins": 79.8,
+    "pts": 0,
+    "mins": 90
+   },
+   {
+    "id": 166,
+    "name": "N.Jackson",
+    "pos": "FWD",
+    "xp": 7.1,
+    "xmins": 78.3,
+    "pts": 2,
+    "mins": 72
+   }
+  ],
+  "best": [
+   {
+    "id": 86,
+    "name": "Lewis-Potter",
+    "pos": "MID",
+    "xp": 2.332,
+    "xmins": 64.7,
+    "pts": 16,
+    "mins": 73
+   },
+   {
+    "id": 336,
+    "name": "Okafor",
+    "pos": "MID",
+    "xp": 1.847,
+    "xmins": 51.3,
+    "pts": 15,
+    "mins": 72
+   },
+   {
+    "id": 211,
+    "name": "Yeremy",
+    "pos": "MID",
+    "xp": 1.757,
+    "xmins": 71.2,
+    "pts": 12,
+    "mins": 78
+   }
+  ]
  }
 }
