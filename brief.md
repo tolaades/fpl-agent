@@ -18,7 +18,7 @@ Deadline **Fri 27 Nov 13:30 America/New_York** | bank £0.1m | 0 free transfer(s
 | MID | Schade | BRE | MUN(A) | 1.91 | 1.06 | 2.29 |
 | FWD | Haaland | MCI | ARS(A) | 0.82 | 1.63 | 3.18 |
 
-**Bench:** Wissa (1.2), Shaw (0.4), João Pedro (0.0), Lammens (2.5)
+**Bench:** Wissa (1.2), Shaw (0.5), João Pedro (0.0), Lammens (2.5)
 
 ## Transfers (0 free)
 
@@ -31,11 +31,10 @@ Deadline **Fri 27 Nov 13:30 America/New_York** | bank £0.1m | 0 free transfer(s
 | João Pedro | Havertz | ARS | £7.4m | +15.87 |
 | João Pedro | McBurnie | HUL | £5.5m | +14.78 |
 | João Pedro | Osula | NEW | £5.8m | +13.30 |
-| Shaw | Ajayi | HUL | £4.2m | +13.11 |
+| João Pedro | Kostoulas | BHA | £5.7m | +12.94 |
 
 ## Risk in your squad
 
-- **Shaw** (Man Utd) - Unspecified injury - 75% chance of playing | 75% to play
 - **João Pedro** (Chelsea) - Thigh injury - Unknown return date | 0% to play
 
 ## Your plan
