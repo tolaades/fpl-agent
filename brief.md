@@ -1,37 +1,37 @@
-# Gameweek 12 brief
+# Gameweek 13 brief
 
-Deadline **Fri 27 Nov 13:30 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW12-16
+Deadline **Tue 01 Dec 13:30 America/New_York** | bank £0.1m | 0 free transfer(s) | horizon GW13-17
 
-## Recommended XI (4-5-1) - 41.3 projected, 46.5 with captain
+## Recommended XI (4-5-1) - 30.4 projected, 35.1 with captain
 
 | Pos | Player | Club | Fixture | xGF | xGA | xPts |
 |---|---|---|---|---|---|---|
-| GKP | Kinsky | TOT | SUN(A) | 0.97 | 0.84 | 4.09 |
-| DEF | Ajer | BRE | MUN(A) | 1.91 | 1.06 | 4.30 |
-| DEF | Calafiori | ARS | MCI(H) | 1.63 | 0.82 | 4.04 |
-| DEF | Virgil | LIV | EVE(A) | 1.32 | 0.92 | 3.83 |
-| DEF | Kayode | BRE | MUN(A) | 1.91 | 1.06 | 3.70 |
-| MID | Groß **(C)** | BHA | NEW(H) | 2.90 | 0.67 | 5.28 |
-| MID | Szoboszlai | LIV | EVE(A) | 1.32 | 0.92 | 4.14 |
-| MID | Palmer | CHE | NFO(A) | 1.43 | 1.29 | 3.86 |
-| MID | Cherki | MCI | ARS(A) | 0.82 | 1.63 | 2.55 |
-| MID | Schade | BRE | MUN(A) | 1.91 | 1.06 | 2.29 |
-| FWD | Haaland | MCI | ARS(A) | 0.82 | 1.63 | 3.18 |
+| GKP | Kinsky | TOT | FUL(H) | 1.23 | 0.69 | 2.93 |
+| DEF | Virgil | LIV | SUN(H) | 2.11 | 0.52 | 2.85 |
+| DEF | Ajer | BRE | ARS(H) | 0.96 | 1.01 | 2.76 |
+| DEF | Calafiori | ARS | BRE(A) | 1.01 | 0.96 | 2.55 |
+| DEF | Kayode | BRE | ARS(H) | 0.96 | 1.01 | 2.43 |
+| MID | Palmer **(C)** | CHE | CRY(H) | 3.35 | 1.05 | 4.75 |
+| MID | Szoboszlai | LIV | SUN(H) | 2.11 | 0.52 | 3.20 |
+| MID | Groß | BHA | BOU(A) | 1.59 | 1.13 | 3.01 |
+| MID | Cherki | MCI | LEE(H) | 1.62 | 0.93 | 2.13 |
+| MID | Schade | BRE | ARS(H) | 0.96 | 1.01 | 1.34 |
+| FWD | Haaland | MCI | LEE(H) | 1.62 | 0.93 | 2.43 |
 
-**Bench:** Wissa (1.2), Shaw (0.5), João Pedro (0.0), Lammens (2.5)
+**Bench:** Wissa (1.2), Shaw (0.5), João Pedro (0.0), Lammens (1.7)
 
 ## Transfers (0 free)
 
 | Out | In | Club | Price | Gain over horizon |
 |---|---|---|---|---|
-| João Pedro | Evanilson | BOU | £6.6m | +21.88 |
-| João Pedro | N.Jackson | AVL | £7.3m | +19.15 |
-| João Pedro | Calvert-Lewin | LEE | £6.0m | +17.67 |
-| João Pedro | Barry | EVE | £5.7m | +17.67 |
-| João Pedro | Havertz | ARS | £7.4m | +15.87 |
-| João Pedro | McBurnie | HUL | £5.5m | +14.78 |
-| João Pedro | Osula | NEW | £5.8m | +13.30 |
-| João Pedro | Kostoulas | BHA | £5.7m | +12.94 |
+| João Pedro | Evanilson | BOU | £6.6m | +13.29 |
+| João Pedro | Delap | NFO | £5.3m | +12.84 |
+| João Pedro | Barry | EVE | £5.7m | +12.30 |
+| João Pedro | N.Jackson | AVL | £7.3m | +11.76 |
+| João Pedro | Calvert-Lewin | LEE | £6.1m | +11.35 |
+| João Pedro | Havertz | ARS | £7.4m | +10.99 |
+| João Pedro | Emegha | CHE | £4.9m | +10.91 |
+| João Pedro | McBurnie | HUL | £5.5m | +9.84 |
 
 ## Risk in your squad
 
